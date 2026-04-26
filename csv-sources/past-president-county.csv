@@ -54,11 +54,11 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/8/1960,AK,Haines,Byrd,southern democrat,0,277
 11/8/1960,AK,Haines,Faubus,independent,0,277
 11/8/1960,AK,Haines,Other,other,0,277
-11/8/1960,AK,Hoonah_Angoon,Kennedy,democrat,346,647
-11/8/1960,AK,Hoonah_Angoon,Nixon,republican,301,647
-11/8/1960,AK,Hoonah_Angoon,Byrd,southern democrat,0,647
-11/8/1960,AK,Hoonah_Angoon,Faubus,independent,0,647
-11/8/1960,AK,Hoonah_Angoon,Other,other,0,647
+11/8/1960,AK,Hoonah-Angoon,Kennedy,democrat,346,647
+11/8/1960,AK,Hoonah-Angoon,Nixon,republican,301,647
+11/8/1960,AK,Hoonah-Angoon,Byrd,southern democrat,0,647
+11/8/1960,AK,Hoonah-Angoon,Faubus,independent,0,647
+11/8/1960,AK,Hoonah-Angoon,Other,other,0,647
 11/8/1960,AK,Juneau,Kennedy,democrat,2105,4435
 11/8/1960,AK,Juneau,Nixon,republican,2330,4435
 11/8/1960,AK,Juneau,Byrd,southern democrat,0,4435
@@ -1259,11 +1259,6 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/8/1960,CO,Boulder,Byrd,southern democrat,0,32197
 11/8/1960,CO,Boulder,Faubus,independent,0,32197
 11/8/1960,CO,Boulder,Other,other,130,32197
-11/8/1960,CO,Broomfield,Kennedy,democrat,12276,32197
-11/8/1960,CO,Broomfield,Nixon,republican,19791,32197
-11/8/1960,CO,Broomfield,Byrd,southern democrat,0,32197
-11/8/1960,CO,Broomfield,Faubus,independent,0,32197
-11/8/1960,CO,Broomfield,Other,other,130,32197
 11/8/1960,CO,Chaffee,Kennedy,democrat,1918,4016
 11/8/1960,CO,Chaffee,Nixon,republican,2094,4016
 11/8/1960,CO,Chaffee,Byrd,southern democrat,0,4016
@@ -15759,10 +15754,10 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/3/1964,AK,Haines,Goldwater,republican,75,320
 11/3/1964,AK,Haines,Unpledged Electors,independent,0,320
 11/3/1964,AK,Haines,Other,other,0,320
-11/3/1964,AK,Hoonah_Angoon,Johnson,democrat,605,693
-11/3/1964,AK,Hoonah_Angoon,Goldwater,republican,88,693
-11/3/1964,AK,Hoonah_Angoon,Unpledged Electors,independent,0,693
-11/3/1964,AK,Hoonah_Angoon,Other,other,0,693
+11/3/1964,AK,Hoonah-Angoon,Johnson,democrat,605,693
+11/3/1964,AK,Hoonah-Angoon,Goldwater,republican,88,693
+11/3/1964,AK,Hoonah-Angoon,Unpledged Electors,independent,0,693
+11/3/1964,AK,Hoonah-Angoon,Other,other,0,693
 11/3/1964,AK,Juneau,Johnson,democrat,3762,5307
 11/3/1964,AK,Juneau,Goldwater,republican,1545,5307
 11/3/1964,AK,Juneau,Unpledged Electors,independent,0,5307
@@ -16723,10 +16718,6 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/3/1964,CO,Boulder,Goldwater,republican,17373,40330
 11/3/1964,CO,Boulder,Unpledged Electors,independent,0,40330
 11/3/1964,CO,Boulder,Other,other,220,40330
-11/3/1964,CO,Broomfield,Johnson,democrat,22737,40330
-11/3/1964,CO,Broomfield,Goldwater,republican,17373,40330
-11/3/1964,CO,Broomfield,Unpledged Electors,independent,0,40330
-11/3/1964,CO,Broomfield,Other,other,220,40330
 11/3/1964,CO,Chaffee,Johnson,democrat,2463,3951
 11/3/1964,CO,Chaffee,Goldwater,republican,1476,3951
 11/3/1964,CO,Chaffee,Unpledged Electors,independent,0,3951
@@ -28332,10 +28323,10 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/5/1968,AK,Haines,Nixon,republican,238,476
 11/5/1968,AK,Haines,Wallace,independent,78,476
 11/5/1968,AK,Haines,Other,other,0,476
-11/5/1968,AK,Hoonah_Angoon,Humphrey,democrat,326,639
-11/5/1968,AK,Hoonah_Angoon,Nixon,republican,280,639
-11/5/1968,AK,Hoonah_Angoon,Wallace,independent,33,639
-11/5/1968,AK,Hoonah_Angoon,Other,other,0,639
+11/5/1968,AK,Hoonah-Angoon,Humphrey,democrat,326,639
+11/5/1968,AK,Hoonah-Angoon,Nixon,republican,280,639
+11/5/1968,AK,Hoonah-Angoon,Wallace,independent,33,639
+11/5/1968,AK,Hoonah-Angoon,Other,other,0,639
 11/5/1968,AK,Juneau,Humphrey,democrat,2811,5789
 11/5/1968,AK,Juneau,Nixon,republican,2601,5789
 11/5/1968,AK,Juneau,Wallace,independent,377,5789
@@ -29296,10 +29287,6 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/5/1968,CO,Boulder,Nixon,republican,27671,47988
 11/5/1968,CO,Boulder,Wallace,independent,2497,47988
 11/5/1968,CO,Boulder,Other,other,398,47988
-11/5/1968,CO,Broomfield,Humphrey,democrat,17422,47988
-11/5/1968,CO,Broomfield,Nixon,republican,27671,47988
-11/5/1968,CO,Broomfield,Wallace,independent,2497,47988
-11/5/1968,CO,Broomfield,Other,other,398,47988
 11/5/1968,CO,Chaffee,Humphrey,democrat,1667,4153
 11/5/1968,CO,Chaffee,Nixon,republican,2121,4153
 11/5/1968,CO,Chaffee,Wallace,independent,358,4153
@@ -40905,10 +40892,10 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/7/1972,AK,Haines,Nixon,republican,334,478
 11/7/1972,AK,Haines,Schmitz,independent,23,478
 11/7/1972,AK,Haines,Other,other,0,478
-11/7/1972,AK,Hoonah_Angoon,McGovern,democrat,346,663
-11/7/1972,AK,Hoonah_Angoon,Nixon,republican,299,663
-11/7/1972,AK,Hoonah_Angoon,Schmitz,independent,18,663
-11/7/1972,AK,Hoonah_Angoon,Other,other,0,663
+11/7/1972,AK,Hoonah-Angoon,McGovern,democrat,346,663
+11/7/1972,AK,Hoonah-Angoon,Nixon,republican,299,663
+11/7/1972,AK,Hoonah-Angoon,Schmitz,independent,18,663
+11/7/1972,AK,Hoonah-Angoon,Other,other,0,663
 11/7/1972,AK,Juneau,McGovern,democrat,2725,6570
 11/7/1972,AK,Juneau,Nixon,republican,3681,6570
 11/7/1972,AK,Juneau,Schmitz,independent,164,6570
@@ -41869,10 +41856,6 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/7/1972,CO,Boulder,Nixon,republican,40766,71770
 11/7/1972,CO,Boulder,Schmitz,independent,837,71770
 11/7/1972,CO,Boulder,Other,other,683,71770
-11/7/1972,CO,Broomfield,McGovern,democrat,29484,71770
-11/7/1972,CO,Broomfield,Nixon,republican,40766,71770
-11/7/1972,CO,Broomfield,Schmitz,independent,837,71770
-11/7/1972,CO,Broomfield,Other,other,683,71770
 11/7/1972,CO,Chaffee,McGovern,democrat,1354,4291
 11/7/1972,CO,Chaffee,Nixon,republican,2859,4291
 11/7/1972,CO,Chaffee,Schmitz,independent,45,4291
@@ -53478,10 +53461,10 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/2/1976,AK,Haines,Ford,republican,338,550
 11/2/1976,AK,Haines,McCarthy,independent,0,550
 11/2/1976,AK,Haines,MacBride,libertarian,30,550
-11/2/1976,AK,Hoonah_Angoon,Carter,democrat,363,722
-11/2/1976,AK,Hoonah_Angoon,Ford,republican,304,722
-11/2/1976,AK,Hoonah_Angoon,McCarthy,independent,0,722
-11/2/1976,AK,Hoonah_Angoon,MacBride,libertarian,53,722
+11/2/1976,AK,Hoonah-Angoon,Carter,democrat,363,722
+11/2/1976,AK,Hoonah-Angoon,Ford,republican,304,722
+11/2/1976,AK,Hoonah-Angoon,McCarthy,independent,0,722
+11/2/1976,AK,Hoonah-Angoon,MacBride,libertarian,53,722
 11/2/1976,AK,Juneau,Carter,democrat,2890,7955
 11/2/1976,AK,Juneau,Ford,republican,4674,7955
 11/2/1976,AK,Juneau,McCarthy,independent,0,7955
@@ -54443,10 +54426,6 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/2/1976,CO,Boulder,Ford,republican,42830,81253
 11/2/1976,CO,Boulder,McCarthy,independent,4252,81253
 11/2/1976,CO,Boulder,MacBride,libertarian,558,81253
-11/2/1976,CO,Broomfield,Carter,democrat,33284,81253
-11/2/1976,CO,Broomfield,Ford,republican,42830,81253
-11/2/1976,CO,Broomfield,McCarthy,independent,4252,81253
-11/2/1976,CO,Broomfield,MacBride,libertarian,558,81253
 11/2/1976,CO,Chaffee,Carter,democrat,2064,5162
 11/2/1976,CO,Chaffee,Ford,republican,2925,5162
 11/2/1976,CO,Chaffee,McCarthy,independent,118,5162
@@ -66081,10 +66060,10 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/4/1980,AK,Haines,Reagan,republican,472,708
 11/4/1980,AK,Haines,Anderson,independent,47,708
 11/4/1980,AK,Haines,Clark,libertarian,34,708
-11/4/1980,AK,Hoonah_Angoon,Carter,democrat,511,947
-11/4/1980,AK,Hoonah_Angoon,Reagan,republican,284,947
-11/4/1980,AK,Hoonah_Angoon,Anderson,independent,88,947
-11/4/1980,AK,Hoonah_Angoon,Clark,libertarian,54,947
+11/4/1980,AK,Hoonah-Angoon,Carter,democrat,511,947
+11/4/1980,AK,Hoonah-Angoon,Reagan,republican,284,947
+11/4/1980,AK,Hoonah-Angoon,Anderson,independent,88,947
+11/4/1980,AK,Hoonah-Angoon,Clark,libertarian,54,947
 11/4/1980,AK,Juneau,Carter,democrat,3600,10278
 11/4/1980,AK,Juneau,Reagan,republican,4607,10278
 11/4/1980,AK,Juneau,Anderson,independent,1190,10278
@@ -67053,10 +67032,6 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/4/1980,CO,Boulder,Reagan,republican,40698,87069
 11/4/1980,CO,Boulder,Anderson,independent,13712,87069
 11/4/1980,CO,Boulder,Clark,libertarian,2630,87069
-11/4/1980,CO,Broomfield,Carter,democrat,28422,87069
-11/4/1980,CO,Broomfield,Reagan,republican,40698,87069
-11/4/1980,CO,Broomfield,Anderson,independent,13712,87069
-11/4/1980,CO,Broomfield,Clark,libertarian,2630,87069
 11/4/1980,CO,Chaffee,Carter,democrat,1583,5478
 11/4/1980,CO,Chaffee,Reagan,republican,3327,5478
 11/4/1980,CO,Chaffee,Anderson,independent,432,5478
@@ -78665,10 +78640,10 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/6/1984,AK,Haines,Reagan,republican,711,1057
 11/6/1984,AK,Haines,Bergland,libertarian,34,1057
 11/6/1984,AK,Haines,Other,other,10,1057
-11/6/1984,AK,Hoonah_Angoon,Mondale,democrat,549,1107
-11/6/1984,AK,Hoonah_Angoon,Reagan,republican,519,1107
-11/6/1984,AK,Hoonah_Angoon,Bergland,libertarian,37,1107
-11/6/1984,AK,Hoonah_Angoon,Other,other,2,1107
+11/6/1984,AK,Hoonah-Angoon,Mondale,democrat,549,1107
+11/6/1984,AK,Hoonah-Angoon,Reagan,republican,519,1107
+11/6/1984,AK,Hoonah-Angoon,Bergland,libertarian,37,1107
+11/6/1984,AK,Hoonah-Angoon,Other,other,2,1107
 11/6/1984,AK,Juneau,Mondale,democrat,5293,12939
 11/6/1984,AK,Juneau,Reagan,republican,7322,12939
 11/6/1984,AK,Juneau,Bergland,libertarian,275,12939
@@ -79629,10 +79604,6 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/6/1984,CO,Boulder,Reagan,republican,53535,97238
 11/6/1984,CO,Boulder,Bergland,libertarian,960,97238
 11/6/1984,CO,Boulder,Other,other,548,97238
-11/6/1984,CO,Broomfield,Mondale,democrat,42195,97238
-11/6/1984,CO,Broomfield,Reagan,republican,53535,97238
-11/6/1984,CO,Broomfield,Bergland,libertarian,960,97238
-11/6/1984,CO,Broomfield,Other,other,548,97238
 11/6/1984,CO,Chaffee,Mondale,democrat,1779,5550
 11/6/1984,CO,Chaffee,Reagan,republican,3680,5550
 11/6/1984,CO,Chaffee,Bergland,libertarian,56,5550
@@ -91221,9 +91192,9 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/8/1988,AK,Haines,Dukakis,democrat,344,910
 11/8/1988,AK,Haines,Bush,republican,563,910
 11/8/1988,AK,Haines,Paul,libertarian,18,910
-11/8/1988,AK,Hoonah_Angoon,Dukakis,democrat,528,1020
-11/8/1988,AK,Hoonah_Angoon,Bush,republican,428,1020
-11/8/1988,AK,Hoonah_Angoon,Paul,libertarian,32,1020
+11/8/1988,AK,Hoonah-Angoon,Dukakis,democrat,528,1020
+11/8/1988,AK,Hoonah-Angoon,Bush,republican,428,1020
+11/8/1988,AK,Hoonah-Angoon,Paul,libertarian,32,1020
 11/8/1988,AK,Juneau,Dukakis,democrat,6538,12385
 11/8/1988,AK,Juneau,Bush,republican,5945,12385
 11/8/1988,AK,Juneau,Paul,libertarian,216,12385
@@ -100896,9 +100867,9 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/3/1992,AK,Haines,Clinton,democrat,523,1408
 11/3/1992,AK,Haines,Bush,republican,463,1408
 11/3/1992,AK,Haines,Perot,reform,402,1408
-11/3/1992,AK,Hoonah_Angoon,Clinton,democrat,404,910
-11/3/1992,AK,Hoonah_Angoon,Bush,republican,260,910
-11/3/1992,AK,Hoonah_Angoon,Perot,reform,232,910
+11/3/1992,AK,Hoonah-Angoon,Clinton,democrat,404,910
+11/3/1992,AK,Hoonah-Angoon,Bush,republican,260,910
+11/3/1992,AK,Hoonah-Angoon,Perot,reform,232,910
 11/3/1992,AK,Juneau,Clinton,democrat,6752,15232
 11/3/1992,AK,Juneau,Bush,republican,5341,15232
 11/3/1992,AK,Juneau,Perot,reform,2985,15232
@@ -111105,11 +111076,11 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/5/1996,AK,Haines,Perot,reform,167,1507
 11/5/1996,AK,Haines,Nader,green,121,1507
 11/5/1996,AK,Haines,Others,other,27,1507
-11/5/1996,AK,Hoonah_Angoon,Clinton,democrat,431,935
-11/5/1996,AK,Hoonah_Angoon,Dole,republican,290,935
-11/5/1996,AK,Hoonah_Angoon,Perot,reform,127,935
-11/5/1996,AK,Hoonah_Angoon,Nader,green,68,935
-11/5/1996,AK,Hoonah_Angoon,Others,other,19,935
+11/5/1996,AK,Hoonah-Angoon,Clinton,democrat,431,935
+11/5/1996,AK,Hoonah-Angoon,Dole,republican,290,935
+11/5/1996,AK,Hoonah-Angoon,Perot,reform,127,935
+11/5/1996,AK,Hoonah-Angoon,Nader,green,68,935
+11/5/1996,AK,Hoonah-Angoon,Others,other,19,935
 11/5/1996,AK,Juneau,Clinton,democrat,6761,15278
 11/5/1996,AK,Juneau,Dole,republican,6007,15278
 11/5/1996,AK,Juneau,Perot,reform,1348,15278
@@ -121244,9 +121215,9 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/7/2000,AK,Haines,Bush,republican,741.4789548,1340.533375
 11/7/2000,AK,Haines,Nader,green,224.7896916,1340.533375
 11/7/2000,AK,Haines,Gore,democrat,339.5513311,1340.533375
-11/7/2000,AK,Hoonah_Angoon,Bush,republican,593.7316851,1344.599705
-11/7/2000,AK,Hoonah_Angoon,Nader,green,173.3274264,1344.599705
-11/7/2000,AK,Hoonah_Angoon,Gore,democrat,538.7583565,1344.599705
+11/7/2000,AK,Hoonah-Angoon,Bush,republican,593.7316851,1344.599705
+11/7/2000,AK,Hoonah-Angoon,Nader,green,173.3274264,1344.599705
+11/7/2000,AK,Hoonah-Angoon,Gore,democrat,538.7583565,1344.599705
 11/7/2000,AK,Juneau,Bush,republican,7262,16048
 11/7/2000,AK,Juneau,Nader,green,1929,16048
 11/7/2000,AK,Juneau,Gore,democrat,6408,16048
@@ -133770,16 +133741,14 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/2/2004,AK,Sitka,Kerry,democrat,1739,3627
 11/2/2004,AK,Wrangell-Petersburg,Bush,republican,1446,2153
 11/2/2004,AK,Wrangell-Petersburg,Kerry,democrat,616,2153
-11/2/2004,AK,Hoonah_Angoon,Bush,republican,463,1011
-11/2/2004,AK,Hoonah_Angoon,Kerry,democrat,494,1011
+11/2/2004,AK,Skagway-Hoonah-Angoon,Bush,republican,628,1011
+11/2/2004,AK,Skagway-Hoonah-Angoon,Kerry,democrat,701,1011
 11/2/2004,AK,Juneau,Bush,republican,5521,11685
 11/2/2004,AK,Juneau,Kerry,democrat,5782,11685
 11/2/2004,AK,Valdez-Cordova,Bush,republican,2338,3644
 11/2/2004,AK,Valdez-Cordova,Kerry,democrat,1152,3644
 11/2/2004,AK,Haines,Bush,republican,561,1026
 11/2/2004,AK,Haines,Kerry,democrat,420,1026
-11/2/2004,AK,Skagway,Bush,republican,165,401
-11/2/2004,AK,Skagway,Kerry,democrat,207,401
 11/2/2004,AK,Yakutat,Bush,republican,132,245
 11/2/2004,AK,Yakutat,Kerry,democrat,105,245
 11/2/2004,AK,Yukon-Koyukuk,Bush,republican,1988,3346
@@ -143179,8 +143148,8 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/4/2008,AK,Petersburg,McCain,republican,963.2723342,1721.322197
 11/4/2008,AK,Wrangell,Obama,democrat,355.9128149,1245.36712
 11/4/2008,AK,Wrangell,McCain,republican,858.4567357,1245.36712
-11/4/2008,AK,Hoonah_Angoon,Obama,democrat,670.9470581,1308.96538
-11/4/2008,AK,Hoonah_Angoon,McCain,republican,584.5732266,1308.96538
+11/4/2008,AK,Hoonah-Angoon,Obama,democrat,670.9470581,1308.96538
+11/4/2008,AK,Hoonah-Angoon,McCain,republican,584.5732266,1308.96538
 11/4/2008,AK,Juneau,Obama,democrat,9818,17503
 11/4/2008,AK,Juneau,McCain,republican,7131,17503
 11/4/2008,AK,Valdez-Cordova,Obama,democrat,1629.69881,5109.629215
@@ -152592,9 +152561,9 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/6/2012,AK,Wrangell,Romney,republican,738.6862877,1143.064441
 11/6/2012,AK,Wrangell,Obama,democrat,362.6311787,1143.064441
 11/6/2012,AK,Wrangell,Johnson,libertarian,26.86220733,1143.064441
-11/6/2012,AK,Hoonah_Angoon,Romney,republican,453.5761231,1255.174007
-11/6/2012,AK,Hoonah_Angoon,Obama,democrat,743.6459358,1255.174007
-11/6/2012,AK,Hoonah_Angoon,Johnson,libertarian,34.85369831,1255.174007
+11/6/2012,AK,Hoonah-Angoon,Romney,republican,453.5761231,1255.174007
+11/6/2012,AK,Hoonah-Angoon,Obama,democrat,743.6459358,1255.174007
+11/6/2012,AK,Hoonah-Angoon,Johnson,libertarian,34.85369831,1255.174007
 11/6/2012,AK,Juneau,Romney,republican,6110.863835,16116.43526
 11/6/2012,AK,Juneau,Obama,democrat,9253.246898,16116.43526
 11/6/2012,AK,Juneau,Johnson,libertarian,406.3699832,16116.43526
@@ -162029,9 +161998,9 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/8/2016,AK,Wrangell,Trump,republican,728.2544172,1095.676353
 11/8/2016,AK,Wrangell,Clinton,democrat,268.4403002,1095.676353
 11/8/2016,AK,Wrangell,Johnson,libertarian,48.37686147,1095.676353
-11/8/2016,AK,Hoonah_Angoon,Trump,republican,416.3224191,1277.133721
-11/8/2016,AK,Hoonah_Angoon,Clinton,democrat,662.7223324,1277.133721
-11/8/2016,AK,Hoonah_Angoon,Johnson,libertarian,74.71500254,1277.133721
+11/8/2016,AK,Hoonah-Angoon,Trump,republican,416.3224191,1277.133721
+11/8/2016,AK,Hoonah-Angoon,Clinton,democrat,662.7223324,1277.133721
+11/8/2016,AK,Hoonah-Angoon,Johnson,libertarian,74.71500254,1277.133721
 11/8/2016,AK,Juneau,Trump,republican,5801.333645,16861.64197
 11/8/2016,AK,Juneau,Clinton,democrat,8974.341731,16861.64197
 11/8/2016,AK,Juneau,Johnson,libertarian,1008.214398,16861.64197
@@ -171697,10 +171666,10 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/3/2020,AK,Haines,Trump,republican,700,1715
 11/3/2020,AK,Haines,Jorgensen,libertarian,20,1715
 11/3/2020,AK,Haines,Other,other,27,1715
-11/3/2020,AK,Hoonah_Angoon,Biden,democrat,1646,2301
-11/3/2020,AK,Hoonah_Angoon,Trump,republican,577,2301
-11/3/2020,AK,Hoonah_Angoon,Jorgensen,libertarian,31,2301
-11/3/2020,AK,Hoonah_Angoon,Other,other,47,2301
+11/3/2020,AK,Hoonah-Angoon,Biden,democrat,1646,2301
+11/3/2020,AK,Hoonah-Angoon,Trump,republican,577,2301
+11/3/2020,AK,Hoonah-Angoon,Jorgensen,libertarian,31,2301
+11/3/2020,AK,Hoonah-Angoon,Other,other,47,2301
 11/3/2020,AK,Juneau,Biden,democrat,11410,18665
 11/3/2020,AK,Juneau,Trump,republican,6586,18665
 11/3/2020,AK,Juneau,Jorgensen,libertarian,381,18665
@@ -193444,9 +193413,9 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/5/2024,AK,Wrangell,Harris,democrat,359,1136
 11/5/2024,AK,Wrangell,Trump,republican,745,1136
 11/5/2024,AK,Wrangell,Kennedy,independent,17,1136
-11/5/2024,AK,Hoonah_Angoon,Harris,democrat,876,1515
-11/5/2024,AK,Hoonah_Angoon,Trump,republican,548,1515
-11/5/2024,AK,Hoonah_Angoon,Kennedy,independent,44,1515
+11/5/2024,AK,Hoonah-Angoon,Harris,democrat,876,1515
+11/5/2024,AK,Hoonah-Angoon,Trump,republican,548,1515
+11/5/2024,AK,Hoonah-Angoon,Kennedy,independent,44,1515
 11/5/2024,AK,Juneau,Harris,democrat,10305,16977
 11/5/2024,AK,Juneau,Trump,republican,5942,16977
 11/5/2024,AK,Juneau,Kennedy,independent,272,16977
