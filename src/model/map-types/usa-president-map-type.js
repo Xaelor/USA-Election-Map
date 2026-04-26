@@ -1434,9 +1434,13 @@ var USAPresidentMapType = new MapType(
       () => {
         if (currentViewingState == ViewingState.zooming)
         {
-          if (dateYear < 2007)
+          if (dateYear < 2001)
           {
-            return ["svg-sources/usa-counties-map-2006.svg", currentMapZoomRegion]
+            return ["svg-sources/usa-counties-map-1997.svg", currentMapZoomRegion]
+          }
+          else if (dateYear < 2007)
+          {
+            return ["svg-sources/usa-counties-map-2001.svg", currentMapZoomRegion]
           }
           else if (dateYear < 2008)
           {
@@ -1654,9 +1658,13 @@ var USAPresidentMapType = new MapType(
       {
         if (await PastElectionResultMapSource.canZoom(PastElectionResultMapSource.getMapData(), currentMapZoomRegion))
         {
-          if (dateYear < 2007)
+          if (dateYear < 2001)
           {
-            return ["svg-sources/usa-counties-map-2006.svg", currentMapZoomRegion]
+            return ["svg-sources/usa-counties-map-1997.svg", currentMapZoomRegion]
+          }
+          else if (dateYear < 2007)
+          {
+            return ["svg-sources/usa-counties-map-2001.svg", currentMapZoomRegion]
           }
           else if (dateYear < 2008)
           {
@@ -2061,9 +2069,13 @@ var USAPresidentMapType = new MapType(
           return "svg-sources/usa-governor-map.svg"
         }
 
-        if (dateYear < 2007)
+        if (dateYear < 2001)
         {
-          return ["svg-sources/usa-counties-map-2006.svg", currentMapZoomRegion]
+          return ["svg-sources/usa-counties-map-1997.svg", currentMapZoomRegion]
+        }
+        else if (dateYear < 2007)
+        {
+          return ["svg-sources/usa-counties-map-2001.svg", currentMapZoomRegion]
         }
         else if (dateYear < 2008)
         {
@@ -2251,9 +2263,13 @@ var USAPresidentMapType = new MapType(
           return "svg-sources/usa-governor-map.svg"
         }
     
-        if (dateYear < 2007)
+        if (dateYear < 2001)
         {
-          return ["svg-sources/usa-counties-map-2006.svg", currentMapZoomRegion]
+          return ["svg-sources/usa-counties-map-1997.svg", currentMapZoomRegion]
+        }
+        else if (dateYear < 2007)
+        {
+          return ["svg-sources/usa-counties-map-2001.svg", currentMapZoomRegion]
         }
         else if (dateYear < 2008)
         {
