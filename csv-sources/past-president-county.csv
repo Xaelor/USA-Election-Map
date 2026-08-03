@@ -165908,267 +165908,877 @@ date,state,county,candidate,party,candidatevotes,totalvotes
 11/8/2016,MI,Wexford,Clinton,democrat,4436,15298
 11/8/2016,MI,Wexford,Trump,republican,10000,15298
 11/8/2016,MI,Wexford,Other,other,862,15298
+11/8/2016,MN,Aitkin,Trump,republican,5516,9231
 11/8/2016,MN,Aitkin,Clinton,democrat,3134,9231
 11/8/2016,MN,Aitkin,Trump,republican,5516,9231
-11/8/2016,MN,Aitkin,Other,other,581,9231
+11/8/2016,MN,Aitkin,Castle,constitution,22,9231
+11/8/2016,MN,Aitkin,Vacek,legal marijuana now,20,9231
+11/8/2016,MN,Aitkin,Kennedy,socialist workers,6,9231
+11/8/2016,MN,Aitkin,Stein,green,67,9231
+11/8/2016,MN,Aitkin,De_La_Fuente,american delta,3,9231
+11/8/2016,MN,Aitkin,McMullin,independence,124,9231
+11/8/2016,MN,Aitkin,Johnson,libertarian,263,9231
+11/8/2016,MN,Aitkin,Write-in,other,46,9231
 11/8/2016,MN,Anoka,Clinton,democrat,75500,185758
 11/8/2016,MN,Anoka,Trump,republican,93339,185758
-11/8/2016,MN,Anoka,Other,other,16919,185758
+11/8/2016,MN,Anoka,Castle,constitution,661,185758
+11/8/2016,MN,Anoka,Vacek,legal marijuana now,864,185758
+11/8/2016,MN,Anoka,Kennedy,socialist workers,89,185758
+11/8/2016,MN,Anoka,Stein,green,2123,185758
+11/8/2016,MN,Anoka,De_La_Fuente,american delta,96,185758
+11/8/2016,MN,Anoka,McMullin,independence,3685,185758
+11/8/2016,MN,Anoka,Johnson,libertarian,7726,185758
+11/8/2016,MN,Anoka,Write-in,other,1675,185758
 11/8/2016,MN,Becker,Clinton,democrat,5208,17222
 11/8/2016,MN,Becker,Trump,republican,10880,17222
-11/8/2016,MN,Becker,Other,other,1134,17222
+11/8/2016,MN,Becker,Castle,constitution,56,17222
+11/8/2016,MN,Becker,Vacek,legal marijuana now,48,17222
+11/8/2016,MN,Becker,Kennedy,socialist workers,13,17222
+11/8/2016,MN,Becker,Stein,green,130,17222
+11/8/2016,MN,Becker,De_La_Fuente,american delta,5,17222
+11/8/2016,MN,Becker,McMullin,independence,171,17222
+11/8/2016,MN,Becker,Johnson,libertarian,580,17222
+11/8/2016,MN,Becker,Write-in,other,131,17222
 11/8/2016,MN,Beltrami,Clinton,democrat,8688,21564
 11/8/2016,MN,Beltrami,Trump,republican,10783,21564
-11/8/2016,MN,Beltrami,Other,other,2093,21564
+11/8/2016,MN,Beltrami,Castle,constitution,67,21564
+11/8/2016,MN,Beltrami,Vacek,legal marijuana now,106,21564
+11/8/2016,MN,Beltrami,Kennedy,socialist workers,14,21564
+11/8/2016,MN,Beltrami,Stein,green,420,21564
+11/8/2016,MN,Beltrami,De_La_Fuente,american delta,14,21564
+11/8/2016,MN,Beltrami,McMullin,independence,444,21564
+11/8/2016,MN,Beltrami,Johnson,libertarian,780,21564
+11/8/2016,MN,Beltrami,Write-in,other,248,21564
 11/8/2016,MN,Benton,Clinton,democrat,5640,20058
 11/8/2016,MN,Benton,Trump,republican,12872,20058
-11/8/2016,MN,Benton,Other,other,1546,20058
+11/8/2016,MN,Benton,Castle,constitution,57,20058
+11/8/2016,MN,Benton,Vacek,legal marijuana now,63,20058
+11/8/2016,MN,Benton,Kennedy,socialist workers,15,20058
+11/8/2016,MN,Benton,Stein,green,245,20058
+11/8/2016,MN,Benton,De_La_Fuente,american delta,11,20058
+11/8/2016,MN,Benton,McMullin,independence,325,20058
+11/8/2016,MN,Benton,Johnson,libertarian,683,20058
+11/8/2016,MN,Benton,Write-in,other,147,20058
 11/8/2016,MN,Big_Stone,Clinton,democrat,921,2755
 11/8/2016,MN,Big_Stone,Trump,republican,1608,2755
-11/8/2016,MN,Big_Stone,Other,other,226,2755
+11/8/2016,MN,Big_Stone,Castle,constitution,14,2755
+11/8/2016,MN,Big_Stone,Vacek,legal marijuana now,12,2755
+11/8/2016,MN,Big_Stone,Kennedy,socialist workers,1,2755
+11/8/2016,MN,Big_Stone,Stein,green,20,2755
+11/8/2016,MN,Big_Stone,De_La_Fuente,american delta,1,2755
+11/8/2016,MN,Big_Stone,McMullin,independence,59,2755
+11/8/2016,MN,Big_Stone,Johnson,libertarian,94,2755
+11/8/2016,MN,Big_Stone,Write-in,other,25,2755
 11/8/2016,MN,Blue_Earth,Clinton,democrat,14428,33593
 11/8/2016,MN,Blue_Earth,Trump,republican,15667,33593
-11/8/2016,MN,Blue_Earth,Other,other,3498,33593
+11/8/2016,MN,Blue_Earth,Castle,constitution,156,33593
+11/8/2016,MN,Blue_Earth,Vacek,legal marijuana now,152,33593
+11/8/2016,MN,Blue_Earth,Kennedy,socialist workers,33,33593
+11/8/2016,MN,Blue_Earth,Stein,green,587,33593
+11/8/2016,MN,Blue_Earth,De_La_Fuente,american delta,24,33593
+11/8/2016,MN,Blue_Earth,McMullin,independence,605,33593
+11/8/2016,MN,Blue_Earth,Johnson,libertarian,1604,33593
+11/8/2016,MN,Blue_Earth,Write-in,other,337,33593
 11/8/2016,MN,Brown,Clinton,democrat,3763,13779
 11/8/2016,MN,Brown,Trump,republican,8708,13779
-11/8/2016,MN,Brown,Other,other,1308,13779
+11/8/2016,MN,Brown,Castle,constitution,72,13779
+11/8/2016,MN,Brown,Vacek,legal marijuana now,46,13779
+11/8/2016,MN,Brown,Kennedy,socialist workers,9,13779
+11/8/2016,MN,Brown,Stein,green,136,13779
+11/8/2016,MN,Brown,De_La_Fuente,american delta,5,13779
+11/8/2016,MN,Brown,McMullin,independence,421,13779
+11/8/2016,MN,Brown,Johnson,libertarian,503,13779
+11/8/2016,MN,Brown,Write-in,other,116,13779
 11/8/2016,MN,Carlton,Clinton,democrat,8460,18211
 11/8/2016,MN,Carlton,Trump,republican,8160,18211
-11/8/2016,MN,Carlton,Other,other,1591,18211
+11/8/2016,MN,Carlton,Castle,constitution,85,18211
+11/8/2016,MN,Carlton,Vacek,legal marijuana now,92,18211
+11/8/2016,MN,Carlton,Kennedy,socialist workers,10,18211
+11/8/2016,MN,Carlton,Stein,green,233,18211
+11/8/2016,MN,Carlton,De_La_Fuente,american delta,8,18211
+11/8/2016,MN,Carlton,McMullin,independence,308,18211
+11/8/2016,MN,Carlton,Johnson,libertarian,703,18211
+11/8/2016,MN,Carlton,Write-in,other,152,18211
 11/8/2016,MN,Carver,Clinton,democrat,21508,55696
 11/8/2016,MN,Carver,Trump,republican,29056,55696
-11/8/2016,MN,Carver,Other,other,5132,55696
+11/8/2016,MN,Carver,Castle,constitution,161,55696
+11/8/2016,MN,Carver,Vacek,legal marijuana now,168,55696
+11/8/2016,MN,Carver,Kennedy,socialist workers,20,55696
+11/8/2016,MN,Carver,Stein,green,488,55696
+11/8/2016,MN,Carver,De_La_Fuente,american delta,29,55696
+11/8/2016,MN,Carver,McMullin,independence,1210,55696
+11/8/2016,MN,Carver,Johnson,libertarian,2461,55696
+11/8/2016,MN,Carver,Write-in,other,595,55696
 11/8/2016,MN,Cass,Clinton,democrat,4949,15999
 11/8/2016,MN,Cass,Trump,republican,9982,15999
-11/8/2016,MN,Cass,Other,other,1068,15999
+11/8/2016,MN,Cass,Castle,constitution,54,15999
+11/8/2016,MN,Cass,Vacek,legal marijuana now,62,15999
+11/8/2016,MN,Cass,Kennedy,socialist workers,10,15999
+11/8/2016,MN,Cass,Stein,green,212,15999
+11/8/2016,MN,Cass,De_La_Fuente,american delta,6,15999
+11/8/2016,MN,Cass,McMullin,independence,196,15999
+11/8/2016,MN,Cass,Johnson,libertarian,414,15999
+11/8/2016,MN,Cass,Write-in,other,114,15999
 11/8/2016,MN,Chippewa,Clinton,democrat,1978,6222
 11/8/2016,MN,Chippewa,Trump,republican,3764,6222
-11/8/2016,MN,Chippewa,Other,other,480,6222
+11/8/2016,MN,Chippewa,Castle,constitution,28,6222
+11/8/2016,MN,Chippewa,Vacek,legal marijuana now,21,6222
+11/8/2016,MN,Chippewa,Kennedy,socialist workers,7,6222
+11/8/2016,MN,Chippewa,Stein,green,70,6222
+11/8/2016,MN,Chippewa,De_La_Fuente,american delta,1,6222
+11/8/2016,MN,Chippewa,McMullin,independence,104,6222
+11/8/2016,MN,Chippewa,Johnson,libertarian,209,6222
+11/8/2016,MN,Chippewa,Write-in,other,40,6222
 11/8/2016,MN,Chisago,Clinton,democrat,9278,30228
 11/8/2016,MN,Chisago,Trump,republican,18441,30228
-11/8/2016,MN,Chisago,Other,other,2509,30228
+11/8/2016,MN,Chisago,Castle,constitution,101,30228
+11/8/2016,MN,Chisago,Vacek,legal marijuana now,135,30228
+11/8/2016,MN,Chisago,Kennedy,socialist workers,14,30228
+11/8/2016,MN,Chisago,Stein,green,317,30228
+11/8/2016,MN,Chisago,De_La_Fuente,american delta,13,30228
+11/8/2016,MN,Chisago,McMullin,independence,496,30228
+11/8/2016,MN,Chisago,Johnson,libertarian,1213,30228
+11/8/2016,MN,Chisago,Write-in,other,220,30228
 11/8/2016,MN,Clay,Clinton,democrat,12971,29398
 11/8/2016,MN,Clay,Trump,republican,13543,29398
-11/8/2016,MN,Clay,Other,other,2884,29398
+11/8/2016,MN,Clay,Castle,constitution,105,29398
+11/8/2016,MN,Clay,Vacek,legal marijuana now,118,29398
+11/8/2016,MN,Clay,Kennedy,socialist workers,13,29398
+11/8/2016,MN,Clay,Stein,green,416,29398
+11/8/2016,MN,Clay,De_La_Fuente,american delta,23,29398
+11/8/2016,MN,Clay,McMullin,independence,424,29398
+11/8/2016,MN,Clay,Johnson,libertarian,1486,29398
+11/8/2016,MN,Clay,Write-in,other,299,29398
 11/8/2016,MN,Clearwater,Clinton,democrat,1100,4245
 11/8/2016,MN,Clearwater,Trump,republican,2925,4245
-11/8/2016,MN,Clearwater,Other,other,220,4245
+11/8/2016,MN,Clearwater,Castle,constitution,16,4245
+11/8/2016,MN,Clearwater,Vacek,legal marijuana now,19,4245
+11/8/2016,MN,Clearwater,Kennedy,socialist workers,2,4245
+11/8/2016,MN,Clearwater,Stein,green,33,4245
+11/8/2016,MN,Clearwater,De_La_Fuente,american delta,0,4245
+11/8/2016,MN,Clearwater,McMullin,independence,36,4245
+11/8/2016,MN,Clearwater,Johnson,libertarian,94,4245
+11/8/2016,MN,Clearwater,Write-in,other,20,4245
 11/8/2016,MN,Cook,Clinton,democrat,1912,3395
 11/8/2016,MN,Cook,Trump,republican,1156,3395
-11/8/2016,MN,Cook,Other,other,327,3395
+11/8/2016,MN,Cook,Castle,constitution,19,3395
+11/8/2016,MN,Cook,Vacek,legal marijuana now,23,3395
+11/8/2016,MN,Cook,Kennedy,socialist workers,2,3395
+11/8/2016,MN,Cook,Stein,green,77,3395
+11/8/2016,MN,Cook,De_La_Fuente,american delta,3,3395
+11/8/2016,MN,Cook,McMullin,independence,63,3395
+11/8/2016,MN,Cook,Johnson,libertarian,105,3395
+11/8/2016,MN,Cook,Write-in,other,35,3395
 11/8/2016,MN,Cottonwood,Clinton,democrat,1678,5721
 11/8/2016,MN,Cottonwood,Trump,republican,3679,5721
-11/8/2016,MN,Cottonwood,Other,other,364,5721
+11/8/2016,MN,Cottonwood,Castle,constitution,41,5721
+11/8/2016,MN,Cottonwood,Vacek,legal marijuana now,15,5721
+11/8/2016,MN,Cottonwood,Kennedy,socialist workers,4,5721
+11/8/2016,MN,Cottonwood,Stein,green,41,5721
+11/8/2016,MN,Cottonwood,De_La_Fuente,american delta,3,5721
+11/8/2016,MN,Cottonwood,McMullin,independence,86,5721
+11/8/2016,MN,Cottonwood,Johnson,libertarian,150,5721
+11/8/2016,MN,Cottonwood,Write-in,other,24,5721
 11/8/2016,MN,Crow_Wing,Clinton,democrat,10982,35842
 11/8/2016,MN,Crow_Wing,Trump,republican,22287,35842
-11/8/2016,MN,Crow_Wing,Other,other,2573,35842
+11/8/2016,MN,Crow_Wing,Castle,constitution,145,35842
+11/8/2016,MN,Crow_Wing,Vacek,legal marijuana now,139,35842
+11/8/2016,MN,Crow_Wing,Kennedy,socialist workers,13,35842
+11/8/2016,MN,Crow_Wing,Stein,green,311,35842
+11/8/2016,MN,Crow_Wing,De_La_Fuente,american delta,19,35842
+11/8/2016,MN,Crow_Wing,McMullin,independence,498,35842
+11/8/2016,MN,Crow_Wing,Johnson,libertarian,1174,35842
+11/8/2016,MN,Crow_Wing,Write-in,other,274,35842
 11/8/2016,MN,Dakota,Clinton,democrat,110483,231440
 11/8/2016,MN,Dakota,Trump,republican,99583,231440
-11/8/2016,MN,Dakota,Other,other,21374,231440
+11/8/2016,MN,Dakota,Castle,constitution,649,231440
+11/8/2016,MN,Dakota,Vacek,legal marijuana now,872,231440
+11/8/2016,MN,Dakota,Kennedy,socialist workers,102,231440
+11/8/2016,MN,Dakota,Stein,green,2678,231440
+11/8/2016,MN,Dakota,De_La_Fuente,american delta,119,231440
+11/8/2016,MN,Dakota,McMullin,independence,4501,231440
+11/8/2016,MN,Dakota,Johnson,libertarian,9879,231440
+11/8/2016,MN,Dakota,Write-in,other,2574,231440
 11/8/2016,MN,Dodge,Clinton,democrat,3102,10654
 11/8/2016,MN,Dodge,Trump,republican,6527,10654
-11/8/2016,MN,Dodge,Other,other,1025,10654
+11/8/2016,MN,Dodge,Castle,constitution,61,10654
+11/8/2016,MN,Dodge,Vacek,legal marijuana now,46,10654
+11/8/2016,MN,Dodge,Kennedy,socialist workers,5,10654
+11/8/2016,MN,Dodge,Stein,green,98,10654
+11/8/2016,MN,Dodge,De_La_Fuente,american delta,5,10654
+11/8/2016,MN,Dodge,McMullin,independence,266,10654
+11/8/2016,MN,Dodge,Johnson,libertarian,454,10654
+11/8/2016,MN,Dodge,Write-in,other,90,10654
 11/8/2016,MN,Douglas,Clinton,democrat,6227,21785
 11/8/2016,MN,Douglas,Trump,republican,13966,21785
-11/8/2016,MN,Douglas,Other,other,1592,21785
+11/8/2016,MN,Douglas,Castle,constitution,87,21785
+11/8/2016,MN,Douglas,Vacek,legal marijuana now,56,21785
+11/8/2016,MN,Douglas,Kennedy,socialist workers,6,21785
+11/8/2016,MN,Douglas,Stein,green,167,21785
+11/8/2016,MN,Douglas,De_La_Fuente,american delta,9,21785
+11/8/2016,MN,Douglas,McMullin,independence,324,21785
+11/8/2016,MN,Douglas,Johnson,libertarian,781,21785
+11/8/2016,MN,Douglas,Write-in,other,162,21785
 11/8/2016,MN,Faribault,Clinton,democrat,2153,7412
 11/8/2016,MN,Faribault,Trump,republican,4659,7412
-11/8/2016,MN,Faribault,Other,other,600,7412
+11/8/2016,MN,Faribault,Castle,constitution,31,7412
+11/8/2016,MN,Faribault,Vacek,legal marijuana now,37,7412
+11/8/2016,MN,Faribault,Kennedy,socialist workers,6,7412
+11/8/2016,MN,Faribault,Stein,green,63,7412
+11/8/2016,MN,Faribault,De_La_Fuente,american delta,3,7412
+11/8/2016,MN,Faribault,McMullin,independence,132,7412
+11/8/2016,MN,Faribault,Johnson,libertarian,271,7412
+11/8/2016,MN,Faribault,Write-in,other,57,7412
 11/8/2016,MN,Fillmore,Clinton,democrat,3872,11055
 11/8/2016,MN,Fillmore,Trump,republican,6271,11055
-11/8/2016,MN,Fillmore,Other,other,912,11055
+11/8/2016,MN,Fillmore,Castle,constitution,54,11055
+11/8/2016,MN,Fillmore,Vacek,legal marijuana now,41,11055
+11/8/2016,MN,Fillmore,Kennedy,socialist workers,6,11055
+11/8/2016,MN,Fillmore,Stein,green,103,11055
+11/8/2016,MN,Fillmore,De_La_Fuente,american delta,5,11055
+11/8/2016,MN,Fillmore,McMullin,independence,216,11055
+11/8/2016,MN,Fillmore,Johnson,libertarian,409,11055
+11/8/2016,MN,Fillmore,Write-in,other,78,11055
 11/8/2016,MN,Freeborn,Clinton,democrat,6041,16051
 11/8/2016,MN,Freeborn,Trump,republican,8808,16051
-11/8/2016,MN,Freeborn,Other,other,1202,16051
+11/8/2016,MN,Freeborn,Castle,constitution,48,16051
+11/8/2016,MN,Freeborn,Vacek,legal marijuana now,71,16051
+11/8/2016,MN,Freeborn,Kennedy,socialist workers,14,16051
+11/8/2016,MN,Freeborn,Stein,green,169,16051
+11/8/2016,MN,Freeborn,De_La_Fuente,american delta,9,16051
+11/8/2016,MN,Freeborn,McMullin,independence,258,16051
+11/8/2016,MN,Freeborn,Johnson,libertarian,511,16051
+11/8/2016,MN,Freeborn,Write-in,other,122,16051
 11/8/2016,MN,Goodhue,Clinton,democrat,9446,25717
 11/8/2016,MN,Goodhue,Trump,republican,14041,25717
-11/8/2016,MN,Goodhue,Other,other,2230,25717
+11/8/2016,MN,Goodhue,Castle,constitution,98,25717
+11/8/2016,MN,Goodhue,Vacek,legal marijuana now,109,25717
+11/8/2016,MN,Goodhue,Kennedy,socialist workers,11,25717
+11/8/2016,MN,Goodhue,Stein,green,262,25717
+11/8/2016,MN,Goodhue,De_La_Fuente,american delta,21,25717
+11/8/2016,MN,Goodhue,McMullin,independence,420,25717
+11/8/2016,MN,Goodhue,Johnson,libertarian,1130,25717
+11/8/2016,MN,Goodhue,Write-in,other,179,25717
 11/8/2016,MN,Grant,Clinton,democrat,1105,3473
 11/8/2016,MN,Grant,Trump,republican,2063,3473
-11/8/2016,MN,Grant,Other,other,305,3473
+11/8/2016,MN,Grant,Castle,constitution,11,3473
+11/8/2016,MN,Grant,Vacek,legal marijuana now,15,3473
+11/8/2016,MN,Grant,Kennedy,socialist workers,1,3473
+11/8/2016,MN,Grant,Stein,green,27,3473
+11/8/2016,MN,Grant,De_La_Fuente,american delta,4,3473
+11/8/2016,MN,Grant,McMullin,independence,69,3473
+11/8/2016,MN,Grant,Johnson,libertarian,159,3473
+11/8/2016,MN,Grant,Write-in,other,19,3473
 11/8/2016,MN,Hennepin,Clinton,democrat,429288,679977
 11/8/2016,MN,Hennepin,Trump,republican,191770,679977
-11/8/2016,MN,Hennepin,Other,other,58919,679977
+11/8/2016,MN,Hennepin,Castle,constitution,1501,679977
+11/8/2016,MN,Hennepin,Vacek,legal marijuana now,2391,679977
+11/8/2016,MN,Hennepin,Kennedy,socialist workers,434,679977
+11/8/2016,MN,Hennepin,Stein,green,10310,679977
+11/8/2016,MN,Hennepin,De_La_Fuente,american delta,288,679977
+11/8/2016,MN,Hennepin,McMullin,independence,12270,679977
+11/8/2016,MN,Hennepin,Johnson,libertarian,24400,679977
+11/8/2016,MN,Hennepin,Write-in,other,7325,679977
 11/8/2016,MN,Houston,Clinton,democrat,4145,10604
 11/8/2016,MN,Houston,Trump,republican,5616,10604
-11/8/2016,MN,Houston,Other,other,843,10604
-11/8/2016,MN,Hubbard,Clinton,democrat,3423,11505
-11/8/2016,MN,Hubbard,Trump,republican,7261,11505
-11/8/2016,MN,Hubbard,Other,other,821,11505
+11/8/2016,MN,Houston,Castle,constitution,29,10604
+11/8/2016,MN,Houston,Vacek,legal marijuana now,52,10604
+11/8/2016,MN,Houston,Kennedy,socialist workers,4,10604
+11/8/2016,MN,Houston,Stein,green,135,10604
+11/8/2016,MN,Houston,De_La_Fuente,american delta,2,10604
+11/8/2016,MN,Houston,McMullin,independence,138,10604
+11/8/2016,MN,Houston,Johnson,libertarian,394,10604
+11/8/2016,MN,Houston,Write-in,other,89,10604
+11/8/2016,MN,Hubbard,Clinton,democrat,3423,11265
+11/8/2016,MN,Hubbard,Trump,republican,7021,11265
+11/8/2016,MN,Hubbard,Castle,constitution,48,11265
+11/8/2016,MN,Hubbard,Vacek,legal marijuana now,32,11265
+11/8/2016,MN,Hubbard,Kennedy,socialist workers,8,11265
+11/8/2016,MN,Hubbard,Stein,green,132,11265
+11/8/2016,MN,Hubbard,De_La_Fuente,american delta,5,11265
+11/8/2016,MN,Hubbard,McMullin,independence,154,11265
+11/8/2016,MN,Hubbard,Johnson,libertarian,342,11265
+11/8/2016,MN,Hubbard,Write-in,other,100,11265
 11/8/2016,MN,Isanti,Clinton,democrat,5657,21016
 11/8/2016,MN,Isanti,Trump,republican,13635,21016
-11/8/2016,MN,Isanti,Other,other,1724,21016
+11/8/2016,MN,Isanti,Castle,constitution,84,21016
+11/8/2016,MN,Isanti,Vacek,legal marijuana now,85,21016
+11/8/2016,MN,Isanti,Kennedy,socialist workers,8,21016
+11/8/2016,MN,Isanti,Stein,green,219,21016
+11/8/2016,MN,Isanti,De_La_Fuente,american delta,5,21016
+11/8/2016,MN,Isanti,McMullin,independence,418,21016
+11/8/2016,MN,Isanti,Johnson,libertarian,765,21016
+11/8/2016,MN,Isanti,Write-in,other,140,21016
 11/8/2016,MN,Itasca,Clinton,democrat,9015,23880
 11/8/2016,MN,Itasca,Trump,republican,12920,23880
-11/8/2016,MN,Itasca,Other,other,1945,23880
+11/8/2016,MN,Itasca,Castle,constitution,126,23880
+11/8/2016,MN,Itasca,Vacek,legal marijuana now,150,23880
+11/8/2016,MN,Itasca,Kennedy,socialist workers,8,23880
+11/8/2016,MN,Itasca,Stein,green,274,23880
+11/8/2016,MN,Itasca,De_La_Fuente,american delta,10,23880
+11/8/2016,MN,Itasca,McMullin,independence,355,23880
+11/8/2016,MN,Itasca,Johnson,libertarian,792,23880
+11/8/2016,MN,Itasca,Write-in,other,230,23880
 11/8/2016,MN,Jackson,Clinton,democrat,1492,5484
 11/8/2016,MN,Jackson,Trump,republican,3609,5484
-11/8/2016,MN,Jackson,Other,other,383,5484
+11/8/2016,MN,Jackson,Castle,constitution,22,5484
+11/8/2016,MN,Jackson,Vacek,legal marijuana now,17,5484
+11/8/2016,MN,Jackson,Kennedy,socialist workers,1,5484
+11/8/2016,MN,Jackson,Stein,green,49,5484
+11/8/2016,MN,Jackson,De_La_Fuente,american delta,1,5484
+11/8/2016,MN,Jackson,McMullin,independence,81,5484
+11/8/2016,MN,Jackson,Johnson,libertarian,181,5484
+11/8/2016,MN,Jackson,Write-in,other,31,5484
 11/8/2016,MN,Kanabec,Clinton,democrat,2327,8177
 11/8/2016,MN,Kanabec,Trump,republican,5230,8177
-11/8/2016,MN,Kanabec,Other,other,620,8177
+11/8/2016,MN,Kanabec,Castle,constitution,32,8177
+11/8/2016,MN,Kanabec,Vacek,legal marijuana now,32,8177
+11/8/2016,MN,Kanabec,Kennedy,socialist workers,5,8177
+11/8/2016,MN,Kanabec,Stein,green,81,8177
+11/8/2016,MN,Kanabec,De_La_Fuente,american delta,5,8177
+11/8/2016,MN,Kanabec,McMullin,independence,115,8177
+11/8/2016,MN,Kanabec,Johnson,libertarian,298,8177
+11/8/2016,MN,Kanabec,Write-in,other,52,8177
 11/8/2016,MN,Kandiyohi,Clinton,democrat,7266,21772
 11/8/2016,MN,Kandiyohi,Trump,republican,12785,21772
-11/8/2016,MN,Kandiyohi,Other,other,1721,21772
+11/8/2016,MN,Kandiyohi,Castle,constitution,83,21772
+11/8/2016,MN,Kandiyohi,Vacek,legal marijuana now,51,21772
+11/8/2016,MN,Kandiyohi,Kennedy,socialist workers,11,21772
+11/8/2016,MN,Kandiyohi,Stein,green,164,21772
+11/8/2016,MN,Kandiyohi,De_La_Fuente,american delta,14,21772
+11/8/2016,MN,Kandiyohi,McMullin,independence,347,21772
+11/8/2016,MN,Kandiyohi,Johnson,libertarian,927,21772
+11/8/2016,MN,Kandiyohi,Write-in,other,124,21772
 11/8/2016,MN,Kittson,Clinton,democrat,823,2385
 11/8/2016,MN,Kittson,Trump,republican,1349,2385
-11/8/2016,MN,Kittson,Other,other,213,2385
+11/8/2016,MN,Kittson,Castle,constitution,13,2385
+11/8/2016,MN,Kittson,Vacek,legal marijuana now,9,2385
+11/8/2016,MN,Kittson,Kennedy,socialist workers,4,2385
+11/8/2016,MN,Kittson,Stein,green,15,2385
+11/8/2016,MN,Kittson,De_La_Fuente,american delta,1,2385
+11/8/2016,MN,Kittson,McMullin,independence,28,2385
+11/8/2016,MN,Kittson,Johnson,libertarian,121,2385
+11/8/2016,MN,Kittson,Write-in,other,22,2385
 11/8/2016,MN,Koochiching,Clinton,democrat,2306,6363
 11/8/2016,MN,Koochiching,Trump,republican,3569,6363
-11/8/2016,MN,Koochiching,Other,other,488,6363
+11/8/2016,MN,Koochiching,Castle,constitution,37,6363
+11/8/2016,MN,Koochiching,Vacek,legal marijuana now,34,6363
+11/8/2016,MN,Koochiching,Kennedy,socialist workers,3,6363
+11/8/2016,MN,Koochiching,Stein,green,69,6363
+11/8/2016,MN,Koochiching,De_La_Fuente,american delta,1,6363
+11/8/2016,MN,Koochiching,McMullin,independence,87,6363
+11/8/2016,MN,Koochiching,Johnson,libertarian,207,6363
+11/8/2016,MN,Koochiching,Write-in,other,50,6363
 11/8/2016,MN,Lac_Qui_Parle,Clinton,democrat,1305,3860
 11/8/2016,MN,Lac_Qui_Parle,Trump,republican,2293,3860
-11/8/2016,MN,Lac_Qui_Parle,Other,other,262,3860
+11/8/2016,MN,Lac_Qui_Parle,Castle,constitution,32,3860
+11/8/2016,MN,Lac_Qui_Parle,Vacek,legal marijuana now,9,3860
+11/8/2016,MN,Lac_Qui_Parle,Kennedy,socialist workers,0,3860
+11/8/2016,MN,Lac_Qui_Parle,Stein,green,33,3860
+11/8/2016,MN,Lac_Qui_Parle,De_La_Fuente,american delta,0,3860
+11/8/2016,MN,Lac_Qui_Parle,McMullin,independence,61,3860
+11/8/2016,MN,Lac_Qui_Parle,Johnson,libertarian,106,3860
+11/8/2016,MN,Lac_Qui_Parle,Write-in,other,21,3860
 11/8/2016,MN,Lake,Clinton,democrat,3077,6521
 11/8/2016,MN,Lake,Trump,republican,2932,6521
-11/8/2016,MN,Lake,Other,other,512,6521
+11/8/2016,MN,Lake,Castle,constitution,27,6521
+11/8/2016,MN,Lake,Vacek,legal marijuana now,28,6521
+11/8/2016,MN,Lake,Kennedy,socialist workers,5,6521
+11/8/2016,MN,Lake,Stein,green,93,6521
+11/8/2016,MN,Lake,De_La_Fuente,american delta,2,6521
+11/8/2016,MN,Lake,McMullin,independence,93,6521
+11/8/2016,MN,Lake,Johnson,libertarian,215,6521
+11/8/2016,MN,Lake,Write-in,other,49,6521
 11/8/2016,MN,Lake_of_the_Woods,Clinton,democrat,553,2242
 11/8/2016,MN,Lake_of_the_Woods,Trump,republican,1540,2242
-11/8/2016,MN,Lake_of_the_Woods,Other,other,149,2242
+11/8/2016,MN,Lake_of_the_Woods,Castle,constitution,10,2242
+11/8/2016,MN,Lake_of_the_Woods,Vacek,legal marijuana now,11,2242
+11/8/2016,MN,Lake_of_the_Woods,Kennedy,socialist workers,2,2242
+11/8/2016,MN,Lake_of_the_Woods,Stein,green,16,2242
+11/8/2016,MN,Lake_of_the_Woods,De_La_Fuente,american delta,2,2242
+11/8/2016,MN,Lake_of_the_Woods,McMullin,independence,29,2242
+11/8/2016,MN,Lake_of_the_Woods,Johnson,libertarian,67,2242
+11/8/2016,MN,Lake_of_the_Woods,Write-in,other,12,2242
 11/8/2016,MN,Le_Sueur,Clinton,democrat,4623,14971
 11/8/2016,MN,Le_Sueur,Trump,republican,9182,14971
-11/8/2016,MN,Le_Sueur,Other,other,1166,14971
+11/8/2016,MN,Le_Sueur,Castle,constitution,65,14971
+11/8/2016,MN,Le_Sueur,Vacek,legal marijuana now,59,14971
+11/8/2016,MN,Le_Sueur,Kennedy,socialist workers,9,14971
+11/8/2016,MN,Le_Sueur,Stein,green,146,14971
+11/8/2016,MN,Le_Sueur,De_La_Fuente,american delta,4,14971
+11/8/2016,MN,Le_Sueur,McMullin,independence,265,14971
+11/8/2016,MN,Le_Sueur,Johnson,libertarian,514,14971
+11/8/2016,MN,Le_Sueur,Write-in,other,104,14971
 11/8/2016,MN,Lincoln,Clinton,democrat,860,3019
 11/8/2016,MN,Lincoln,Trump,republican,1931,3019
-11/8/2016,MN,Lincoln,Other,other,228,3019
+11/8/2016,MN,Lincoln,Castle,constitution,17,3019
+11/8/2016,MN,Lincoln,Vacek,legal marijuana now,4,3019
+11/8/2016,MN,Lincoln,Kennedy,socialist workers,2,3019
+11/8/2016,MN,Lincoln,Stein,green,18,3019
+11/8/2016,MN,Lincoln,De_La_Fuente,american delta,0,3019
+11/8/2016,MN,Lincoln,McMullin,independence,59,3019
+11/8/2016,MN,Lincoln,Johnson,libertarian,112,3019
+11/8/2016,MN,Lincoln,Write-in,other,16,3019
 11/8/2016,MN,Lyon,Clinton,democrat,3825,12215
 11/8/2016,MN,Lyon,Trump,republican,7256,12215
-11/8/2016,MN,Lyon,Other,other,1134,12215
+11/8/2016,MN,Lyon,Castle,constitution,65,12215
+11/8/2016,MN,Lyon,Vacek,legal marijuana now,36,12215
+11/8/2016,MN,Lyon,Kennedy,socialist workers,11,12215
+11/8/2016,MN,Lyon,Stein,green,115,12215
+11/8/2016,MN,Lyon,De_La_Fuente,american delta,12,12215
+11/8/2016,MN,Lyon,McMullin,independence,286,12215
+11/8/2016,MN,Lyon,Johnson,libertarian,523,12215
+11/8/2016,MN,Lyon,Write-in,other,86,12215
 11/8/2016,MN,McLeod,Clinton,democrat,4978,18807
 11/8/2016,MN,McLeod,Trump,republican,12155,18807
-11/8/2016,MN,McLeod,Other,other,1674,18807
+11/8/2016,MN,McLeod,Castle,constitution,83,18807
+11/8/2016,MN,McLeod,Vacek,legal marijuana now,87,18807
+11/8/2016,MN,McLeod,Kennedy,socialist workers,9,18807
+11/8/2016,MN,McLeod,Stein,green,135,18807
+11/8/2016,MN,McLeod,De_La_Fuente,american delta,8,18807
+11/8/2016,MN,McLeod,McMullin,independence,372,18807
+11/8/2016,MN,McLeod,Johnson,libertarian,857,18807
+11/8/2016,MN,McLeod,Write-in,other,123,18807
 11/8/2016,MN,Mahnomen,Clinton,democrat,930,2088
 11/8/2016,MN,Mahnomen,Trump,republican,991,2088
-11/8/2016,MN,Mahnomen,Other,other,167,2088
+11/8/2016,MN,Mahnomen,Castle,constitution,16,2088
+11/8/2016,MN,Mahnomen,Vacek,legal marijuana now,16,2088
+11/8/2016,MN,Mahnomen,Kennedy,socialist workers,3,2088
+11/8/2016,MN,Mahnomen,Stein,green,34,2088
+11/8/2016,MN,Mahnomen,De_La_Fuente,american delta,0,2088
+11/8/2016,MN,Mahnomen,McMullin,independence,30,2088
+11/8/2016,MN,Mahnomen,Johnson,libertarian,54,2088
+11/8/2016,MN,Mahnomen,Write-in,other,14,2088
 11/8/2016,MN,Marshall,Clinton,democrat,1225,4817
 11/8/2016,MN,Marshall,Trump,republican,3208,4817
-11/8/2016,MN,Marshall,Other,other,384,4817
+11/8/2016,MN,Marshall,Castle,constitution,23,4817
+11/8/2016,MN,Marshall,Vacek,legal marijuana now,14,4817
+11/8/2016,MN,Marshall,Kennedy,socialist workers,3,4817
+11/8/2016,MN,Marshall,Stein,green,30,4817
+11/8/2016,MN,Marshall,De_La_Fuente,american delta,2,4817
+11/8/2016,MN,Marshall,McMullin,independence,85,4817
+11/8/2016,MN,Marshall,Johnson,libertarian,204,4817
+11/8/2016,MN,Marshall,Write-in,other,23,4817
 11/8/2016,MN,Martin,Clinton,democrat,2733,10531
 11/8/2016,MN,Martin,Trump,republican,7062,10531
-11/8/2016,MN,Martin,Other,other,736,10531
+11/8/2016,MN,Martin,Castle,constitution,43,10531
+11/8/2016,MN,Martin,Vacek,legal marijuana now,33,10531
+11/8/2016,MN,Martin,Kennedy,socialist workers,2,10531
+11/8/2016,MN,Martin,Stein,green,79,10531
+11/8/2016,MN,Martin,De_La_Fuente,american delta,5,10531
+11/8/2016,MN,Martin,McMullin,independence,169,10531
+11/8/2016,MN,Martin,Johnson,libertarian,343,10531
+11/8/2016,MN,Martin,Write-in,other,62,10531
 11/8/2016,MN,Meeker,Clinton,democrat,3191,12282
 11/8/2016,MN,Meeker,Trump,republican,8104,12282
-11/8/2016,MN,Meeker,Other,other,987,12282
+11/8/2016,MN,Meeker,Castle,constitution,53,12282
+11/8/2016,MN,Meeker,Vacek,legal marijuana now,51,12282
+11/8/2016,MN,Meeker,Kennedy,socialist workers,10,12282
+11/8/2016,MN,Meeker,Stein,green,94,12282
+11/8/2016,MN,Meeker,De_La_Fuente,american delta,2,12282
+11/8/2016,MN,Meeker,McMullin,independence,244,12282
+11/8/2016,MN,Meeker,Johnson,libertarian,448,12282
+11/8/2016,MN,Meeker,Write-in,other,85,12282
 11/8/2016,MN,Mille_Lacs,Clinton,democrat,3710,13017
 11/8/2016,MN,Mille_Lacs,Trump,republican,8340,13017
-11/8/2016,MN,Mille_Lacs,Other,other,967,13017
+11/8/2016,MN,Mille_Lacs,Castle,constitution,57,13017
+11/8/2016,MN,Mille_Lacs,Vacek,legal marijuana now,57,13017
+11/8/2016,MN,Mille_Lacs,Kennedy,socialist workers,3,13017
+11/8/2016,MN,Mille_Lacs,Stein,green,128,13017
+11/8/2016,MN,Mille_Lacs,De_La_Fuente,american delta,4,13017
+11/8/2016,MN,Mille_Lacs,McMullin,independence,199,13017
+11/8/2016,MN,Mille_Lacs,Johnson,libertarian,451,13017
+11/8/2016,MN,Mille_Lacs,Write-in,other,68,13017
 11/8/2016,MN,Morrison,Clinton,democrat,3637,17614
 11/8/2016,MN,Morrison,Trump,republican,12925,17614
-11/8/2016,MN,Morrison,Other,other,1052,17614
+11/8/2016,MN,Morrison,Castle,constitution,56,17614
+11/8/2016,MN,Morrison,Vacek,legal marijuana now,60,17614
+11/8/2016,MN,Morrison,Kennedy,socialist workers,16,17614
+11/8/2016,MN,Morrison,Stein,green,146,17614
+11/8/2016,MN,Morrison,De_La_Fuente,american delta,6,17614
+11/8/2016,MN,Morrison,McMullin,independence,246,17614
+11/8/2016,MN,Morrison,Johnson,libertarian,442,17614
+11/8/2016,MN,Morrison,Write-in,other,80,17614
 11/8/2016,MN,Mower,Clinton,democrat,7437,17715
 11/8/2016,MN,Mower,Trump,republican,8823,17715
-11/8/2016,MN,Mower,Other,other,1455,17715
+11/8/2016,MN,Mower,Castle,constitution,83,17715
+11/8/2016,MN,Mower,Vacek,legal marijuana now,82,17715
+11/8/2016,MN,Mower,Kennedy,socialist workers,17,17715
+11/8/2016,MN,Mower,Stein,green,191,17715
+11/8/2016,MN,Mower,De_La_Fuente,american delta,7,17715
+11/8/2016,MN,Mower,McMullin,independence,316,17715
+11/8/2016,MN,Mower,Johnson,libertarian,620,17715
+11/8/2016,MN,Mower,Write-in,other,139,17715
 11/8/2016,MN,Murray,Clinton,democrat,1295,4668
 11/8/2016,MN,Murray,Trump,republican,2974,4668
-11/8/2016,MN,Murray,Other,other,399,4668
+11/8/2016,MN,Murray,Castle,constitution,20,4668
+11/8/2016,MN,Murray,Vacek,legal marijuana now,20,4668
+11/8/2016,MN,Murray,Kennedy,socialist workers,1,4668
+11/8/2016,MN,Murray,Stein,green,22,4668
+11/8/2016,MN,Murray,De_La_Fuente,american delta,1,4668
+11/8/2016,MN,Murray,McMullin,independence,106,4668
+11/8/2016,MN,Murray,Johnson,libertarian,203,4668
+11/8/2016,MN,Murray,Write-in,other,26,4668
 11/8/2016,MN,Nicollet,Clinton,democrat,7886,18097
 11/8/2016,MN,Nicollet,Trump,republican,8437,18097
-11/8/2016,MN,Nicollet,Other,other,1774,18097
+11/8/2016,MN,Nicollet,Castle,constitution,64,18097
+11/8/2016,MN,Nicollet,Vacek,legal marijuana now,88,18097
+11/8/2016,MN,Nicollet,Kennedy,socialist workers,9,18097
+11/8/2016,MN,Nicollet,Stein,green,250,18097
+11/8/2016,MN,Nicollet,De_La_Fuente,american delta,14,18097
+11/8/2016,MN,Nicollet,McMullin,independence,336,18097
+11/8/2016,MN,Nicollet,Johnson,libertarian,831,18097
+11/8/2016,MN,Nicollet,Write-in,other,182,18097
 11/8/2016,MN,Nobles,Clinton,democrat,2733,8632
 11/8/2016,MN,Nobles,Trump,republican,5299,8632
-11/8/2016,MN,Nobles,Other,other,600,8632
+11/8/2016,MN,Nobles,Castle,constitution,41,8632
+11/8/2016,MN,Nobles,Vacek,legal marijuana now,45,8632
+11/8/2016,MN,Nobles,Kennedy,socialist workers,3,8632
+11/8/2016,MN,Nobles,Stein,green,40,8632
+11/8/2016,MN,Nobles,De_La_Fuente,american delta,4,8632
+11/8/2016,MN,Nobles,McMullin,independence,168,8632
+11/8/2016,MN,Nobles,Johnson,libertarian,258,8632
+11/8/2016,MN,Nobles,Write-in,other,41,8632
 11/8/2016,MN,Norman,Clinton,democrat,1264,3261
 11/8/2016,MN,Norman,Trump,republican,1699,3261
-11/8/2016,MN,Norman,Other,other,298,3261
+11/8/2016,MN,Norman,Castle,constitution,14,3261
+11/8/2016,MN,Norman,Vacek,legal marijuana now,18,3261
+11/8/2016,MN,Norman,Kennedy,socialist workers,4,3261
+11/8/2016,MN,Norman,Stein,green,29,3261
+11/8/2016,MN,Norman,De_La_Fuente,american delta,2,3261
+11/8/2016,MN,Norman,McMullin,independence,41,3261
+11/8/2016,MN,Norman,Johnson,libertarian,161,3261
+11/8/2016,MN,Norman,Write-in,other,29,3261
 11/8/2016,MN,Olmsted,Clinton,democrat,36268,80129
 11/8/2016,MN,Olmsted,Trump,republican,35668,80129
-11/8/2016,MN,Olmsted,Other,other,8193,80129
+11/8/2016,MN,Olmsted,Castle,constitution,303,80129
+11/8/2016,MN,Olmsted,Vacek,legal marijuana now,270,80129
+11/8/2016,MN,Olmsted,Kennedy,socialist workers,35,80129
+11/8/2016,MN,Olmsted,Stein,green,1117,80129
+11/8/2016,MN,Olmsted,De_La_Fuente,american delta,56,80129
+11/8/2016,MN,Olmsted,McMullin,independence,2016,80129
+11/8/2016,MN,Olmsted,Johnson,libertarian,3547,80129
+11/8/2016,MN,Olmsted,Write-in,other,849,80129
 11/8/2016,MN,Otter_Tail,Clinton,democrat,9340,32500
 11/8/2016,MN,Otter_Tail,Trump,republican,20939,32500
-11/8/2016,MN,Otter_Tail,Other,other,2221,32500
+11/8/2016,MN,Otter_Tail,Castle,constitution,118,32500
+11/8/2016,MN,Otter_Tail,Vacek,legal marijuana now,83,32500
+11/8/2016,MN,Otter_Tail,Kennedy,socialist workers,20,32500
+11/8/2016,MN,Otter_Tail,Stein,green,245,32500
+11/8/2016,MN,Otter_Tail,De_La_Fuente,american delta,9,32500
+11/8/2016,MN,Otter_Tail,McMullin,independence,531,32500
+11/8/2016,MN,Otter_Tail,Johnson,libertarian,1000,32500
+11/8/2016,MN,Otter_Tail,Write-in,other,215,32500
 11/8/2016,MN,Pennington,Clinton,democrat,2147,6715
 11/8/2016,MN,Pennington,Trump,republican,4000,6715
-11/8/2016,MN,Pennington,Other,other,568,6715
+11/8/2016,MN,Pennington,Castle,constitution,26,6715
+11/8/2016,MN,Pennington,Vacek,legal marijuana now,30,6715
+11/8/2016,MN,Pennington,Kennedy,socialist workers,1,6715
+11/8/2016,MN,Pennington,Stein,green,46,6715
+11/8/2016,MN,Pennington,De_La_Fuente,american delta,3,6715
+11/8/2016,MN,Pennington,McMullin,independence,104,6715
+11/8/2016,MN,Pennington,Johnson,libertarian,315,6715
+11/8/2016,MN,Pennington,Write-in,other,43,6715
 11/8/2016,MN,Pine,Clinton,democrat,4580,13811
 11/8/2016,MN,Pine,Trump,republican,8191,13811
-11/8/2016,MN,Pine,Other,other,1040,13811
+11/8/2016,MN,Pine,Castle,constitution,52,13811
+11/8/2016,MN,Pine,Vacek,legal marijuana now,81,13811
+11/8/2016,MN,Pine,Kennedy,socialist workers,10,13811
+11/8/2016,MN,Pine,Stein,green,147,13811
+11/8/2016,MN,Pine,De_La_Fuente,american delta,3,13811
+11/8/2016,MN,Pine,McMullin,independence,192,13811
+11/8/2016,MN,Pine,Johnson,libertarian,473,13811
+11/8/2016,MN,Pine,Write-in,other,82,13811
 11/8/2016,MN,Pipestone,Clinton,democrat,1127,4808
 11/8/2016,MN,Pipestone,Trump,republican,3338,4808
-11/8/2016,MN,Pipestone,Other,other,343,4808
+11/8/2016,MN,Pipestone,Castle,constitution,23,4808
+11/8/2016,MN,Pipestone,Vacek,legal marijuana now,10,4808
+11/8/2016,MN,Pipestone,Kennedy,socialist workers,6,4808
+11/8/2016,MN,Pipestone,Stein,green,44,4808
+11/8/2016,MN,Pipestone,De_La_Fuente,american delta,1,4808
+11/8/2016,MN,Pipestone,McMullin,independence,99,4808
+11/8/2016,MN,Pipestone,Johnson,libertarian,131,4808
+11/8/2016,MN,Pipestone,Write-in,other,29,4808
 11/8/2016,MN,Polk,Clinton,democrat,4712,14796
 11/8/2016,MN,Polk,Trump,republican,8979,14796
-11/8/2016,MN,Polk,Other,other,1105,14796
+11/8/2016,MN,Polk,Castle,constitution,63,14796
+11/8/2016,MN,Polk,Vacek,legal marijuana now,49,14796
+11/8/2016,MN,Polk,Kennedy,socialist workers,9,14796
+11/8/2016,MN,Polk,Stein,green,124,14796
+11/8/2016,MN,Polk,De_La_Fuente,american delta,10,14796
+11/8/2016,MN,Polk,McMullin,independence,235,14796
+11/8/2016,MN,Polk,Johnson,libertarian,517,14796
+11/8/2016,MN,Polk,Write-in,other,98,14796
 11/8/2016,MN,Pope,Clinton,democrat,2106,6319
 11/8/2016,MN,Pope,Trump,republican,3793,6319
-11/8/2016,MN,Pope,Other,other,420,6319
+11/8/2016,MN,Pope,Castle,constitution,13,6319
+11/8/2016,MN,Pope,Vacek,legal marijuana now,26,6319
+11/8/2016,MN,Pope,Kennedy,socialist workers,4,6319
+11/8/2016,MN,Pope,Stein,green,43,6319
+11/8/2016,MN,Pope,De_La_Fuente,american delta,0,6319
+11/8/2016,MN,Pope,McMullin,independence,88,6319
+11/8/2016,MN,Pope,Johnson,libertarian,221,6319
+11/8/2016,MN,Pope,Write-in,other,25,6319
 11/8/2016,MN,Ramsey,Clinton,democrat,177738,273143
 11/8/2016,MN,Ramsey,Trump,republican,70894,273143
-11/8/2016,MN,Ramsey,Other,other,24511,273143
+11/8/2016,MN,Ramsey,Castle,constitution,740,273143
+11/8/2016,MN,Ramsey,Vacek,legal marijuana now,1238,273143
+11/8/2016,MN,Ramsey,Kennedy,socialist workers,209,273143
+11/8/2016,MN,Ramsey,Stein,green,4560,273143
+11/8/2016,MN,Ramsey,De_La_Fuente,american delta,125,273143
+11/8/2016,MN,Ramsey,McMullin,independence,5000,273143
+11/8/2016,MN,Ramsey,Johnson,libertarian,9626,273143
+11/8/2016,MN,Ramsey,Write-in,other,3013,273143
 11/8/2016,MN,Red_Lake,Clinton,democrat,540,1881
 11/8/2016,MN,Red_Lake,Trump,republican,1141,1881
-11/8/2016,MN,Red_Lake,Other,other,200,1881
+11/8/2016,MN,Red_Lake,Castle,constitution,10,1881
+11/8/2016,MN,Red_Lake,Vacek,legal marijuana now,10,1881
+11/8/2016,MN,Red_Lake,Kennedy,socialist workers,0,1881
+11/8/2016,MN,Red_Lake,Stein,green,23,1881
+11/8/2016,MN,Red_Lake,De_La_Fuente,american delta,2,1881
+11/8/2016,MN,Red_Lake,McMullin,independence,45,1881
+11/8/2016,MN,Red_Lake,Johnson,libertarian,100,1881
+11/8/2016,MN,Red_Lake,Write-in,other,10,1881
 11/8/2016,MN,Redwood,Clinton,democrat,1887,7611
 11/8/2016,MN,Redwood,Trump,republican,5137,7611
-11/8/2016,MN,Redwood,Other,other,587,7611
+11/8/2016,MN,Redwood,Castle,constitution,48,7611
+11/8/2016,MN,Redwood,Vacek,legal marijuana now,22,7611
+11/8/2016,MN,Redwood,Kennedy,socialist workers,4,7611
+11/8/2016,MN,Redwood,Stein,green,77,7611
+11/8/2016,MN,Redwood,De_La_Fuente,american delta,2,7611
+11/8/2016,MN,Redwood,McMullin,independence,147,7611
+11/8/2016,MN,Redwood,Johnson,libertarian,242,7611
+11/8/2016,MN,Redwood,Write-in,other,45,7611
 11/8/2016,MN,Renville,Clinton,democrat,2117,7606
 11/8/2016,MN,Renville,Trump,republican,4890,7606
-11/8/2016,MN,Renville,Other,other,599,7606
+11/8/2016,MN,Renville,Castle,constitution,52,7606
+11/8/2016,MN,Renville,Vacek,legal marijuana now,32,7606
+11/8/2016,MN,Renville,Kennedy,socialist workers,4,7606
+11/8/2016,MN,Renville,Stein,green,66,7606
+11/8/2016,MN,Renville,De_La_Fuente,american delta,10,7606
+11/8/2016,MN,Renville,McMullin,independence,148,7606
+11/8/2016,MN,Renville,Johnson,libertarian,244,7606
+11/8/2016,MN,Renville,Write-in,other,43,7606
 11/8/2016,MN,Rice,Clinton,democrat,14437,32443
 11/8/2016,MN,Rice,Trump,republican,15429,32443
-11/8/2016,MN,Rice,Other,other,2577,32443
+11/8/2016,MN,Rice,Castle,constitution,108,32443
+11/8/2016,MN,Rice,Vacek,legal marijuana now,93,32443
+11/8/2016,MN,Rice,Kennedy,socialist workers,12,32443
+11/8/2016,MN,Rice,Stein,green,386,32443
+11/8/2016,MN,Rice,De_La_Fuente,american delta,24,32443
+11/8/2016,MN,Rice,McMullin,independence,498,32443
+11/8/2016,MN,Rice,Johnson,libertarian,1230,32443
+11/8/2016,MN,Rice,Write-in,other,226,32443
 11/8/2016,MN,Rock,Clinton,democrat,1373,4839
 11/8/2016,MN,Rock,Trump,republican,3091,4839
-11/8/2016,MN,Rock,Other,other,375,4839
+11/8/2016,MN,Rock,Castle,constitution,32,4839
+11/8/2016,MN,Rock,Vacek,legal marijuana now,16,4839
+11/8/2016,MN,Rock,Kennedy,socialist workers,2,4839
+11/8/2016,MN,Rock,Stein,green,40,4839
+11/8/2016,MN,Rock,De_La_Fuente,american delta,1,4839
+11/8/2016,MN,Rock,McMullin,independence,97,4839
+11/8/2016,MN,Rock,Johnson,libertarian,155,4839
+11/8/2016,MN,Rock,Write-in,other,32,4839
 11/8/2016,MN,Roseau,Clinton,democrat,1856,7804
 11/8/2016,MN,Roseau,Trump,republican,5451,7804
-11/8/2016,MN,Roseau,Other,other,497,7804
+11/8/2016,MN,Roseau,Castle,constitution,38,7804
+11/8/2016,MN,Roseau,Vacek,legal marijuana now,30,7804
+11/8/2016,MN,Roseau,Kennedy,socialist workers,3,7804
+11/8/2016,MN,Roseau,Stein,green,42,7804
+11/8/2016,MN,Roseau,De_La_Fuente,american delta,1,7804
+11/8/2016,MN,Roseau,McMullin,independence,126,7804
+11/8/2016,MN,Roseau,Johnson,libertarian,220,7804
+11/8/2016,MN,Roseau,Write-in,other,37,7804
 11/8/2016,MN,Saint_Louis,Clinton,democrat,57771,112422
 11/8/2016,MN,Saint_Louis,Trump,republican,44630,112422
-11/8/2016,MN,Saint_Louis,Other,other,10021,112422
+11/8/2016,MN,Saint_Louis,Castle,constitution,360,112422
+11/8/2016,MN,Saint_Louis,Vacek,legal marijuana now,591,112422
+11/8/2016,MN,Saint_Louis,Kennedy,socialist workers,72,112422
+11/8/2016,MN,Saint_Louis,Stein,green,1878,112422
+11/8/2016,MN,Saint_Louis,De_La_Fuente,american delta,64,112422
+11/8/2016,MN,Saint_Louis,McMullin,independence,1528,112422
+11/8/2016,MN,Saint_Louis,Johnson,libertarian,4366,112422
+11/8/2016,MN,Saint_Louis,Write-in,other,1162,112422
 11/8/2016,MN,Scott,Clinton,democrat,28502,75029
 11/8/2016,MN,Scott,Trump,republican,39948,75029
-11/8/2016,MN,Scott,Other,other,6579,75029
-11/8/2016,MN,Sherburne,Clinton,democrat,13293,48283
-11/8/2016,MN,Sherburne,Trump,republican,31053,48283
-11/8/2016,MN,Sherburne,Other,other,3937,48283
+11/8/2016,MN,Scott,Castle,constitution,210,75029
+11/8/2016,MN,Scott,Vacek,legal marijuana now,227,75029
+11/8/2016,MN,Scott,Kennedy,socialist workers,33,75029
+11/8/2016,MN,Scott,Stein,green,740,75029
+11/8/2016,MN,Scott,De_La_Fuente,american delta,33,75029
+11/8/2016,MN,Scott,McMullin,independence,1296,75029
+11/8/2016,MN,Scott,Johnson,libertarian,3400,75029
+11/8/2016,MN,Scott,Write-in,other,640,75029
+11/8/2016,MN,Sherburne,Clinton,democrat,13293,48313
+11/8/2016,MN,Sherburne,Trump,republican,31053,48313
+11/8/2016,MN,Sherburne,Castle,constitution,170,48313
+11/8/2016,MN,Sherburne,Vacek,legal marijuana now,180,48313
+11/8/2016,MN,Sherburne,Kennedy,socialist workers,9,48313
+11/8/2016,MN,Sherburne,Stein,green,457,48313
+11/8/2016,MN,Sherburne,De_La_Fuente,american delta,25,48313
+11/8/2016,MN,Sherburne,McMullin,independence,850,48313
+11/8/2016,MN,Sherburne,Johnson,libertarian,1927,48313
+11/8/2016,MN,Sherburne,Write-in,other,349,48313
 11/8/2016,MN,Sibley,Clinton,democrat,1954,7774
 11/8/2016,MN,Sibley,Trump,republican,5193,7774
-11/8/2016,MN,Sibley,Other,other,627,7774
+11/8/2016,MN,Sibley,Castle,constitution,37,7774
+11/8/2016,MN,Sibley,Vacek,legal marijuana now,21,7774
+11/8/2016,MN,Sibley,Kennedy,socialist workers,1,7774
+11/8/2016,MN,Sibley,Stein,green,64,7774
+11/8/2016,MN,Sibley,De_La_Fuente,american delta,3,7774
+11/8/2016,MN,Sibley,McMullin,independence,163,7774
+11/8/2016,MN,Sibley,Johnson,libertarian,291,7774
+11/8/2016,MN,Sibley,Write-in,other,47,7774
 11/8/2016,MN,Stearns,Clinton,democrat,25576,79592
 11/8/2016,MN,Stearns,Trump,republican,47617,79592
-11/8/2016,MN,Stearns,Other,other,6399,79592
+11/8/2016,MN,Stearns,Castle,constitution,228,79592
+11/8/2016,MN,Stearns,Vacek,legal marijuana now,265,79592
+11/8/2016,MN,Stearns,Kennedy,socialist workers,47,79592
+11/8/2016,MN,Stearns,Stein,green,954,79592
+11/8/2016,MN,Stearns,De_La_Fuente,american delta,45,79592
+11/8/2016,MN,Stearns,McMullin,independence,1281,79592
+11/8/2016,MN,Stearns,Johnson,libertarian,2972,79592
+11/8/2016,MN,Stearns,Write-in,other,607,79592
 11/8/2016,MN,Steele,Clinton,democrat,6241,19179
 11/8/2016,MN,Steele,Trump,republican,11198,19179
-11/8/2016,MN,Steele,Other,other,1740,19179
+11/8/2016,MN,Steele,Castle,constitution,91,19179
+11/8/2016,MN,Steele,Vacek,legal marijuana now,78,19179
+11/8/2016,MN,Steele,Kennedy,socialist workers,10,19179
+11/8/2016,MN,Steele,Stein,green,208,19179
+11/8/2016,MN,Steele,De_La_Fuente,american delta,12,19179
+11/8/2016,MN,Steele,McMullin,independence,396,19179
+11/8/2016,MN,Steele,Johnson,libertarian,808,19179
+11/8/2016,MN,Steele,Write-in,other,137,19179
 11/8/2016,MN,Stevens,Clinton,democrat,2116,5398
 11/8/2016,MN,Stevens,Trump,republican,2799,5398
-11/8/2016,MN,Stevens,Other,other,483,5398
+11/8/2016,MN,Stevens,Castle,constitution,28,5398
+11/8/2016,MN,Stevens,Vacek,legal marijuana now,10,5398
+11/8/2016,MN,Stevens,Kennedy,socialist workers,9,5398
+11/8/2016,MN,Stevens,Stein,green,69,5398
+11/8/2016,MN,Stevens,De_La_Fuente,american delta,1,5398
+11/8/2016,MN,Stevens,McMullin,independence,112,5398
+11/8/2016,MN,Stevens,Johnson,libertarian,205,5398
+11/8/2016,MN,Stevens,Write-in,other,49,5398
 11/8/2016,MN,Swift,Clinton,democrat,1686,4994
 11/8/2016,MN,Swift,Trump,republican,2963,4994
-11/8/2016,MN,Swift,Other,other,345,4994
+11/8/2016,MN,Swift,Castle,constitution,24,4994
+11/8/2016,MN,Swift,Vacek,legal marijuana now,23,4994
+11/8/2016,MN,Swift,Kennedy,socialist workers,2,4994
+11/8/2016,MN,Swift,Stein,green,33,4994
+11/8/2016,MN,Swift,De_La_Fuente,american delta,2,4994
+11/8/2016,MN,Swift,McMullin,independence,80,4994
+11/8/2016,MN,Swift,Johnson,libertarian,153,4994
+11/8/2016,MN,Swift,Write-in,other,28,4994
 11/8/2016,MN,Todd,Clinton,democrat,2783,11993
 11/8/2016,MN,Todd,Trump,republican,8485,11993
-11/8/2016,MN,Todd,Other,other,725,11993
+11/8/2016,MN,Todd,Castle,constitution,44,11993
+11/8/2016,MN,Todd,Vacek,legal marijuana now,36,11993
+11/8/2016,MN,Todd,Kennedy,socialist workers,12,11993
+11/8/2016,MN,Todd,Stein,green,96,11993
+11/8/2016,MN,Todd,De_La_Fuente,american delta,7,11993
+11/8/2016,MN,Todd,McMullin,independence,194,11993
+11/8/2016,MN,Todd,Johnson,libertarian,287,11993
+11/8/2016,MN,Todd,Write-in,other,49,11993
 11/8/2016,MN,Traverse,Clinton,democrat,630,1798
 11/8/2016,MN,Traverse,Trump,republican,1049,1798
-11/8/2016,MN,Traverse,Other,other,119,1798
+11/8/2016,MN,Traverse,Castle,constitution,13,1798
+11/8/2016,MN,Traverse,Vacek,legal marijuana now,8,1798
+11/8/2016,MN,Traverse,Kennedy,socialist workers,1,1798
+11/8/2016,MN,Traverse,Stein,green,16,1798
+11/8/2016,MN,Traverse,De_La_Fuente,american delta,0,1798
+11/8/2016,MN,Traverse,McMullin,independence,31,1798
+11/8/2016,MN,Traverse,Johnson,libertarian,40,1798
+11/8/2016,MN,Traverse,Write-in,other,10,1798
 11/8/2016,MN,Wabasha,Clinton,democrat,3866,11832
 11/8/2016,MN,Wabasha,Trump,republican,6989,11832
-11/8/2016,MN,Wabasha,Other,other,977,11832
+11/8/2016,MN,Wabasha,Castle,constitution,40,11832
+11/8/2016,MN,Wabasha,Vacek,legal marijuana now,50,11832
+11/8/2016,MN,Wabasha,Kennedy,socialist workers,3,11832
+11/8/2016,MN,Wabasha,Stein,green,127,11832
+11/8/2016,MN,Wabasha,De_La_Fuente,american delta,4,11832
+11/8/2016,MN,Wabasha,McMullin,independence,218,11832
+11/8/2016,MN,Wabasha,Johnson,libertarian,467,11832
+11/8/2016,MN,Wabasha,Write-in,other,68,11832
 11/8/2016,MN,Wadena,Clinton,democrat,1684,6934
 11/8/2016,MN,Wadena,Trump,republican,4837,6934
-11/8/2016,MN,Wadena,Other,other,413,6934
+11/8/2016,MN,Wadena,Castle,constitution,19,6934
+11/8/2016,MN,Wadena,Vacek,legal marijuana now,21,6934
+11/8/2016,MN,Wadena,Kennedy,socialist workers,3,6934
+11/8/2016,MN,Wadena,Stein,green,58,6934
+11/8/2016,MN,Wadena,De_La_Fuente,american delta,2,6934
+11/8/2016,MN,Wadena,McMullin,independence,106,6934
+11/8/2016,MN,Wadena,Johnson,libertarian,164,6934
+11/8/2016,MN,Wadena,Write-in,other,40,6934
 11/8/2016,MN,Waseca,Clinton,democrat,2838,9653
 11/8/2016,MN,Waseca,Trump,republican,5967,9653
-11/8/2016,MN,Waseca,Other,other,848,9653
-11/8/2016,MN,Washington,Clinton,democrat,67086,144235
-11/8/2016,MN,Washington,Trump,republican,64428,144235
-11/8/2016,MN,Washington,Other,other,12721,144235
+11/8/2016,MN,Waseca,Castle,constitution,38,9653
+11/8/2016,MN,Waseca,Vacek,legal marijuana now,45,9653
+11/8/2016,MN,Waseca,Kennedy,socialist workers,7,9653
+11/8/2016,MN,Waseca,Stein,green,106,9653
+11/8/2016,MN,Waseca,De_La_Fuente,american delta,7,9653
+11/8/2016,MN,Waseca,McMullin,independence,184,9653
+11/8/2016,MN,Waseca,Johnson,libertarian,387,9653
+11/8/2016,MN,Waseca,Write-in,other,74,9653
+11/8/2016,MN,Washington,Clinton,democrat,67086,144485
+11/8/2016,MN,Washington,Trump,republican,64428,144485
+11/8/2016,MN,Washington,Castle,constitution,420,144485
+11/8/2016,MN,Washington,Vacek,legal marijuana now,394,144485
+11/8/2016,MN,Washington,Kennedy,socialist workers,62,144485
+11/8/2016,MN,Washington,Stein,green,1128,144485
+11/8/2016,MN,Washington,De_La_Fuente,american delta,76,144485
+11/8/2016,MN,Washington,McMullin,independence,2718,144485
+11/8/2016,MN,Washington,Johnson,libertarian,6180,144485
+11/8/2016,MN,Washington,Write-in,other,1393,144485
 11/8/2016,MN,Watonwan,Clinton,democrat,1814,4998
 11/8/2016,MN,Watonwan,Trump,republican,2768,4998
-11/8/2016,MN,Watonwan,Other,other,416,4998
+11/8/2016,MN,Watonwan,Castle,constitution,33,4998
+11/8/2016,MN,Watonwan,Vacek,legal marijuana now,32,4998
+11/8/2016,MN,Watonwan,Kennedy,socialist workers,4,4998
+11/8/2016,MN,Watonwan,Stein,green,52,4998
+11/8/2016,MN,Watonwan,De_La_Fuente,american delta,5,4998
+11/8/2016,MN,Watonwan,McMullin,independence,107,4998
+11/8/2016,MN,Watonwan,Johnson,libertarian,156,4998
+11/8/2016,MN,Watonwan,Write-in,other,27,4998
 11/8/2016,MN,Wilkin,Clinton,democrat,893,3302
 11/8/2016,MN,Wilkin,Trump,republican,2129,3302
-11/8/2016,MN,Wilkin,Other,other,280,3302
+11/8/2016,MN,Wilkin,Castle,constitution,15,3302
+11/8/2016,MN,Wilkin,Vacek,legal marijuana now,11,3302
+11/8/2016,MN,Wilkin,Kennedy,socialist workers,1,3302
+11/8/2016,MN,Wilkin,Stein,green,34,3302
+11/8/2016,MN,Wilkin,De_La_Fuente,american delta,2,3302
+11/8/2016,MN,Wilkin,McMullin,independence,48,3302
+11/8/2016,MN,Wilkin,Johnson,libertarian,146,3302
+11/8/2016,MN,Wilkin,Write-in,other,23,3302
 11/8/2016,MN,Winona,Clinton,democrat,11366,26074
 11/8/2016,MN,Winona,Trump,republican,12122,26074
-11/8/2016,MN,Winona,Other,other,2586,26074
+11/8/2016,MN,Winona,Castle,constitution,96,26074
+11/8/2016,MN,Winona,Vacek,legal marijuana now,118,26074
+11/8/2016,MN,Winona,Kennedy,socialist workers,23,26074
+11/8/2016,MN,Winona,Stein,green,531,26074
+11/8/2016,MN,Winona,De_La_Fuente,american delta,17,26074
+11/8/2016,MN,Winona,McMullin,independence,414,26074
+11/8/2016,MN,Winona,Johnson,libertarian,1165,26074
+11/8/2016,MN,Winona,Write-in,other,222,26074
 11/8/2016,MN,Wright,Clinton,democrat,20334,69618
 11/8/2016,MN,Wright,Trump,republican,43274,69618
-11/8/2016,MN,Wright,Other,other,6010,69618
+11/8/2016,MN,Wright,Castle,constitution,293,69618
+11/8/2016,MN,Wright,Vacek,legal marijuana now,254,69618
+11/8/2016,MN,Wright,Kennedy,socialist workers,27,69618
+11/8/2016,MN,Wright,Stein,green,547,69618
+11/8/2016,MN,Wright,De_La_Fuente,american delta,29,69618
+11/8/2016,MN,Wright,McMullin,independence,1392,69618
+11/8/2016,MN,Wright,Johnson,libertarian,3002,69618
+11/8/2016,MN,Wright,Write-in,other,466,69618
 11/8/2016,MN,Yellow_Medicine,Clinton,democrat,1524,5276
 11/8/2016,MN,Yellow_Medicine,Trump,republican,3382,5276
-11/8/2016,MN,Yellow_Medicine,Other,other,370,5276
+11/8/2016,MN,Yellow_Medicine,Castle,constitution,28,5276
+11/8/2016,MN,Yellow_Medicine,Vacek,legal marijuana now,16,5276
+11/8/2016,MN,Yellow_Medicine,Kennedy,socialist workers,6,5276
+11/8/2016,MN,Yellow_Medicine,Stein,green,37,5276
+11/8/2016,MN,Yellow_Medicine,De_La_Fuente,american delta,4,5276
+11/8/2016,MN,Yellow_Medicine,McMullin,independence,93,5276
+11/8/2016,MN,Yellow_Medicine,Johnson,libertarian,163,5276
+11/8/2016,MN,Yellow_Medicine,Write-in,other,23,5276
 11/8/2016,MS,Adams,Clinton,democrat,7757,13836
 11/8/2016,MS,Adams,Trump,republican,5874,13836
 11/8/2016,MS,Adams,Other,other,205,13836
