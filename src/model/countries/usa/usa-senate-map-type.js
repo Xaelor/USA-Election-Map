@@ -1171,6 +1171,27 @@ const USASenateMapType = new MapType(
     
     function getFormattedRegionName(regionName, regionData)
     {
+      const countyRegionID = regionData?.region
+      if (
+        (regionData?.county || countyRegionID?.includes(subregionSeparator)) &&
+        regionData.state &&
+        !countyRegionID?.endsWith(subregionSeparator + statePopularVoteDistrictID)
+      )
+      {
+        const county = regionData.county ?? countyRegionID.split(subregionSeparator)[1]
+        return `${county.replace(/_s$/, "'s").replaceAll("_", " ")}, ${regionData.state}`
+      }
+
+      if (
+        currentViewingState == ViewingState.zooming &&
+        regionName.includes(subregionSeparator) &&
+        !regionName.endsWith(subregionSeparator + statePopularVoteDistrictID)
+      )
+      {
+        const [state, county] = regionName.split(subregionSeparator)
+        return `${county.replace(/_s$/, "'s").replaceAll("_", " ")}, ${state}`
+      }
+
       if (!regionData) return regionName
       
       if (!regionData.isSpecial && regionName.endsWith(" Special"))
@@ -2101,6 +2122,225 @@ const USASenateMapType = new MapType(
       1.0 // voteshareCutoffMargin
     )
 
+    const regionNameToIDCounty = Object.fromEntries(
+      ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"].map(state => [state, state])
+    )
+
+    const countyColumnMap = {
+      date: "date",
+      region: "state",
+      county: "county",
+      isSpecial: "special",
+      candidateName: "candidate",
+      partyID: "party",
+      candidateVotes: "candidatevotes",
+      totalVotes: "totalvotes"
+    }
+    const countyRowsByDate = {}
+    const specialSenateDateOffset = 1
+    const specialSenateDates = new Map()
+    const getSenateElectionDate = date => specialSenateDates.get(date) ?? date
+
+    const getCountyResultData = (state, county, rows) => {
+      const totalVotes = parseFloat(rows[0][countyColumnMap.totalVotes])
+      const candidateData = {}
+
+      for (const row of rows)
+      {
+        const candidate = row[countyColumnMap.candidateName]
+        const partyName = row[countyColumnMap.partyID]
+        const party = Object.values(politicalParties).find(currentParty =>
+          currentParty.getNames().some(name => name.toLowerCase() == partyName?.toLowerCase())
+        )
+        const partyID = party?.getID() ?? IndependentGenericParty.getID()
+
+        if (!candidateData[candidate])
+        {
+          candidateData[candidate] = {candidate, partyID, votes: 0}
+        }
+        candidateData[candidate].votes += parseFloat(row[countyColumnMap.candidateVotes])
+      }
+
+      const partyVotesharePercentages = Object.values(candidateData).map(candidate => ({
+        ...candidate,
+        voteshare: totalVotes > 0 ? candidate.votes / totalVotes * 100 : 0
+      })).sort((candidate1, candidate2) => candidate2.votes - candidate1.votes)
+
+      const winner = partyVotesharePercentages[0]
+      const runnerUp = partyVotesharePercentages[1]
+      const countyID = county?.replaceAll(" ", "_")
+      const region = countyID ? `${state}${subregionSeparator}${countyID}` : state
+      const candidateMap = {}
+      for (const candidate of partyVotesharePercentages)
+      {
+        candidateMap[candidate.partyID] = candidate.candidate
+      }
+
+      return {
+        region,
+        state,
+        county: countyID,
+        isSpecial: rows.some(row => row[countyColumnMap.isSpecial] == "TRUE"),
+        totalVotes,
+        voteWorth: 1,
+        margin: winner ? winner.voteshare - (runnerUp?.voteshare ?? 0) : 0,
+        partyID: winner?.partyID ?? TossupParty.getID(),
+        candidateName: winner?.candidate ?? null,
+        candidateMap,
+        partyVotesharePercentages
+      }
+    }
+
+    const countyResultsFilterFunction = (rawMapData, mapDates, columnMap) => {
+      const filteredMapData = {}
+
+      for (const mapDate of mapDates)
+      {
+        const stateCountyRows = {}
+        for (const row of rawMapData[mapDate])
+        {
+          const state = row[columnMap.region]
+          const county = row[columnMap.county]
+          stateCountyRows[state] ??= {}
+          stateCountyRows[state][county] ??= {regular: [], special: []}
+          const electionType = row[columnMap.isSpecial] == "TRUE" ? "special" : "regular"
+          stateCountyRows[state][county][electionType].push(row)
+        }
+        countyRowsByDate[mapDate] = stateCountyRows
+
+        filteredMapData[mapDate] = {}
+        for (const state in stateCountyRows)
+        {
+          const stateRows = []
+          let stateTotalVotes = 0
+          for (const county in stateCountyRows[state])
+          {
+            const countyRows = Object.values(stateCountyRows[state][county]).flat()
+            stateRows.push(...countyRows)
+            stateTotalVotes += parseFloat(countyRows[0][columnMap.totalVotes])
+          }
+          filteredMapData[mapDate][state] = getCountyResultData(state, null, stateRows)
+          filteredMapData[mapDate][state].totalVotes = stateTotalVotes
+          filteredMapData[mapDate][state].partyVotesharePercentages.forEach(candidate => {
+            candidate.voteshare = stateTotalVotes > 0 ? candidate.votes / stateTotalVotes * 100 : 0
+          })
+          filteredMapData[mapDate][state].partyVotesharePercentages.sort((candidate1, candidate2) => candidate2.votes - candidate1.votes)
+          const [winner, runnerUp] = filteredMapData[mapDate][state].partyVotesharePercentages
+          filteredMapData[mapDate][state].partyID = winner?.partyID ?? TossupParty.getID()
+          filteredMapData[mapDate][state].candidateName = winner?.candidate ?? null
+          filteredMapData[mapDate][state].margin = winner ? winner.voteshare - (runnerUp?.voteshare ?? 0) : 0
+
+        }
+      }
+
+      return {mapData: filteredMapData, mapDates}
+    }
+
+    const getCountyResultsDate = (regionID, date, isSpecial) => {
+      const selectedDate = date ?? currentSliderDate?.getTime() ?? currentDisplayDate?.getTime()
+      if (selectedDate == null) return undefined
+
+      const selectedYear = new Date(selectedDate).getFullYear()
+      return Object.keys(countyRowsByDate)
+        .map(Number)
+        .filter(mapDate => {
+          const countyRows = countyRowsByDate[mapDate]?.[regionID]
+          return new Date(mapDate).getFullYear() == selectedYear
+            && countyRows
+            && Object.values(countyRows).some(rows => rows[isSpecial ? "special" : "regular"].length > 0)
+        })
+        .sort((date1, date2) => Math.abs(date1 - selectedDate) - Math.abs(date2 - selectedDate))[0]
+    }
+
+    const getSenateCountyPopularVoteData = (mapDateData, stateID, senateDate, countyDate) => {
+      const stateName = Object.keys(regionNameToIDHistorical).find(state => regionNameToIDHistorical[state] == stateID)
+      const regularSenateDate = getSenateElectionDate(senateDate)
+      const isSpecial = regularSenateDate != senateDate
+      const senateRows = PastElectionResultMapSource.rawMapData?.[regularSenateDate]?.filter(row =>
+        row[PastElectionResultMapSource.columnMap.region] == stateName
+      ) ?? []
+      const senateRace = Object.values(mapDateData ?? {}).find(regionData =>
+        regionData.region?.replace(/-S$/, "") == stateID
+        && regionData.isSpecial == isSpecial
+        && regionData.partyVotesharePercentages
+      )
+
+      if (!senateRace) return null
+
+      return {
+        ...cloneObject(senateRace),
+        region: `${stateID}${subregionSeparator}${statePopularVoteDistrictID}`,
+        voteWorth: 0
+      }
+    }
+
+    const countyResultsZoomingFunction = async (mapDateData, regionID, isZoomCheck, date) => {
+      if (!SenateCountyDataSource.getMapData() || !(await CSVDatabase.isSourceUpdated(SenateCountyDataSource.getID())))
+      {
+        if (!(await SenateCountyDataSource.loadMap()))
+        {
+          throw new Error("Unable to load Senate county election results")
+        }
+      }
+
+      const selectedDate = date ?? currentSliderDate?.getTime() ?? currentDisplayDate?.getTime()
+      if (selectedDate == null) return isZoomCheck ? false : {}
+
+      const isSpecial = specialSenateDates.has(selectedDate)
+      const countyDate = getCountyResultsDate(regionID, selectedDate, isSpecial)
+      const senateElectionDates = getSenateCountyViewMapDates(regionID)
+      const selectedYear = new Date(selectedDate).getFullYear()
+      if (countyDate == null || !senateElectionDates.some(mapDate => new Date(mapDate).getFullYear() == selectedYear))
+      {
+        if (isZoomCheck) return false
+
+        return Object.fromEntries(Object.values(mapDateData ?? {})
+          .filter(regionData =>
+            regionData.region?.replace(/-S$/, "") == regionID &&
+            (!isSpecial || regionData.isSpecial)
+          )
+          .map(regionData => [regionData.region, cloneObject(regionData)]))
+      }
+      if (isZoomCheck) return true
+
+      const stateCountyRows = countyRowsByDate[countyDate][regionID]
+      if (!stateCountyRows) return {}
+
+      const countyZoomData = {}
+      for (const county in stateCountyRows)
+      {
+        const countyRows = stateCountyRows[county][isSpecial ? "special" : "regular"]
+        if (countyRows.length == 0) continue
+        countyZoomData[`${regionID}${subregionSeparator}${county.replaceAll(" ", "_")}`] = getCountyResultData(regionID, county, countyRows)
+      }
+      const popularVoteData = getSenateCountyPopularVoteData(mapDateData, regionID, selectedDate, countyDate)
+      if (popularVoteData)
+      {
+        countyZoomData[popularVoteData.region] = popularVoteData
+      }
+      return countyZoomData
+    }
+
+    const getSenateCountySVGFromDate = (dateTime) => {
+      if (currentViewingState != ViewingState.zooming) return "svg-sources/usa-senate-map.svg"
+
+      const isSpecial = specialSenateDates.has(dateTime)
+      if (getCountyResultsDate(currentMapZoomRegion, dateTime, isSpecial) == null)
+      {
+        return ["svg-sources/usa-senate-map.svg", currentMapZoomRegion]
+      }
+
+      const year = new Date(dateTime).getFullYear()
+      const countyMap = year < 2001 ? "usa-counties-map-1997.svg"
+        : year < 2007 ? "usa-counties-map-2001.svg"
+        : year < 2008 ? "usa-counties-map-2007.svg"
+        : year < 2013 ? "usa-counties-map-2008.svg"
+        : year < 2015 ? "usa-counties-map-2013.svg"
+        : year < 2019 ? "usa-counties-map-2015.svg"
+        : "usa-counties-map-2019.svg"
+      return [`svg-sources/${countyMap}`, currentMapZoomRegion]
+    }
+
     const PastElectionResultMapSource = new MapSource(
       "Past-Senate-Elections", // id
       "Past Elections", // name
@@ -2134,7 +2374,7 @@ const USASenateMapType = new MapType(
       true, // addDecimalPadding
       doubleLineClassSeparatedFilterFunction, // organizeMapDataFunction
       null, // viewingDataFunction
-      null, // zoomingDataFunction
+      countyResultsZoomingFunction, // zoomingDataFunction
       null, // splitVoteDataFunction
       null, // splitVoteDisplayOptions
       getFormattedRegionName, // getFormattedRegionName
@@ -2142,29 +2382,27 @@ const USASenateMapType = new MapType(
       {
         if (mapDate == null) { return }
         
-        const regionData = mapData[mapDate.getTime()][regionID]
+        let baseRegionID = regionID?.includes(subregionSeparator)
+          ? regionID.split(subregionSeparator)[0]
+          : regionID
+        const regionData = mapData?.[mapDate.getTime()]?.[baseRegionID]
         if (regionData && regionData.isHold && regionData.electionDate)
         {
           mapDate = new Date(regionData.electionDate)
         }
 
-        let isSpecial = false
-        if (regionID != null && mapDate != null)
-        {
-          isSpecial = regionData.isSpecial
-        }
+        const isSpecial = regionData?.isSpecial ?? false
 
         let linkToOpen = homepageURL + mapDate.getFullYear() + "_United_States_Senate_"
         if (!shouldOpenHomepage)
         {
-          let baseRegionID = regionID
           if (isSpecial)
           {
             linkToOpen += "special_"
           }
-          if (regionID.endsWith("-S"))
+          if (baseRegionID?.endsWith("-S"))
           {
-            baseRegionID = regionID.slice(0, regionID.length-2)
+            baseRegionID = baseRegionID.slice(0, baseRegionID.length-2)
           }
           linkToOpen += "election"
           linkToOpen += "_in_" + regionIDToLinkMap[baseRegionID]
@@ -2180,7 +2418,102 @@ const USASenateMapType = new MapType(
       null, // isCustomMap
       null, // shouldClearDisabled
       true, // shouldShowVoteshare
-      1.0 // voteshareCutoffMargin
+      1.0, // voteshareCutoffMargin
+      getSenateCountySVGFromDate // overrideSVGPath
+    )
+    const getSenateCountyViewMapDates = (stateID, mapDates = PastElectionResultMapSource.mapDates) => {
+      if (!PastElectionResultMapSource.rawMapData) return []
+
+      const stateName = Object.keys(regionNameToIDHistorical).find(state => regionNameToIDHistorical[state] == stateID)
+      if (!stateName) return []
+
+      const stateMapDates = mapDates.filter(mapDate =>
+        PastElectionResultMapSource.rawMapData[mapDate]?.some(row => row[PastElectionResultMapSource.columnMap.region] == stateName)
+      )
+      const stateCountyDataDates = Object.keys(countyRowsByDate).map(Number).filter(mapDate =>
+        countyRowsByDate[mapDate]?.[stateID]
+      )
+
+      return stateMapDates.flatMap(mapDate => {
+        const hasSpecialSenateRace = PastElectionResultMapSource.rawMapData[mapDate].some(row =>
+          row[PastElectionResultMapSource.columnMap.region] == stateName &&
+          row[PastElectionResultMapSource.columnMap.isSpecial] == "TRUE"
+        )
+        const hasSpecialCountyResults = stateCountyDataDates.some(countyDate =>
+          new Date(countyDate).getFullYear() == new Date(mapDate).getFullYear() &&
+          Object.values(countyRowsByDate[countyDate][stateID]).some(rows => rows.special.length > 0)
+        )
+        if (!hasSpecialSenateRace || !hasSpecialCountyResults) return [mapDate]
+
+        const specialDate = mapDate + specialSenateDateOffset
+        specialSenateDates.set(specialDate, mapDate)
+        if (PastElectionResultMapSource.mapData?.[mapDate])
+        {
+          PastElectionResultMapSource.mapData[specialDate] = PastElectionResultMapSource.mapData[mapDate]
+        }
+        return [mapDate, specialDate]
+      })
+    }
+
+    PastElectionResultMapSource.getMapDatesFunction = (mapDates) => {
+      if (currentViewingState != ViewingState.zooming || !currentMapZoomRegion || !PastElectionResultMapSource.rawMapData)
+      {
+        return mapDates
+      }
+
+      return getSenateCountyViewMapDates(currentMapZoomRegion, mapDates)
+    }
+    PastElectionResultMapSource.getDateDisplaySuffix = date =>
+      specialSenateDates.has(date.getTime()) ? " Special" : ""
+
+    const SenateCountyDataSource = new MapSource(
+      "Past-Senate-Counties", // id
+      "Senate County Data", // name
+      "./csv-sources/past-senate-county.csv", // dataURL
+      "https://en.wikipedia.org/wiki/", // homepageURL
+      {regular: "./assets/wikipedia-large.png", mini: "./assets/wikipedia-large.png"}, // iconURL
+      countyColumnMap, // columnMap
+      null, // cycleYear
+      null, // candidateNameToPartyIDMap
+      null, // shortCandidateNameOverride
+      regionNameToIDCounty, // regionNameToIDMap
+      regionIDToLinkHistorical, // regionIDToLinkMap
+      null, // heldRegionMap
+      false, // shouldFilterOutDuplicateRows
+      true, // addDecimalPadding
+      countyResultsFilterFunction, // organizeMapDataFunction
+      null, // viewingDataFunction
+      countyResultsZoomingFunction, // zoomingDataFunction
+      null, // splitVoteDataFunction
+      null, // splitVoteDisplayOptions
+      (regionID) => {
+        if (!regionID.includes(subregionSeparator)) return regionID
+        const [state, county] = regionID.split(subregionSeparator)
+        return `${county.replace(/_s$/, "'s").replaceAll("_", " ")}, ${state}`
+      }, // getFormattedRegionName
+      function(homepageURL, regionID, regionIDToLinkMap, mapDate, shouldOpenHomepage)
+      {
+        if (mapDate == null) { return }
+
+        let linkToOpen = homepageURL + mapDate.getFullYear() + "_United_States_Senate_"
+        if (shouldOpenHomepage)
+        {
+          return linkToOpen + "elections"
+        }
+
+        if (regionID?.includes(subregionSeparator))
+        {
+          regionID = regionID.split(subregionSeparator)[0]
+        }
+        return linkToOpen + "election_in_" + regionIDToLinkMap[regionID]
+      }, // customOpenRegionLinkFunction
+      null, // updateCustomMapFunction
+      null, // convertMapDataRowToCSVFunction
+      null, // isCustomMap
+      null, // shouldClearDisabled
+      true, // shouldShowVoteshare
+      0, // voteshareCutoffMargin
+      getSenateCountySVGFromDate // overrideSVGPath
     )
 
     let idsToPartyNames = {}

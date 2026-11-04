@@ -833,8 +833,17 @@ async function leftClickRegion(div)
   else if (canZoomCurrently && currentViewingState == ViewingState.viewing && showingDataMap)
   {
     let baseRegionID = getBaseRegionID($(div).attr('id')).baseID
+    const shouldShowSpecialCountyResults =
+      currentMapType.getID() == USASenateMapType.getID() &&
+      baseRegionID.endsWith("-S") &&
+      currentMapSource.getDateDisplaySuffix
     currentViewingState = ViewingState.zooming
     currentMapZoomRegion = regionID.includes(subregionSeparator) ? baseRegionID.split(subregionSeparator)[0] : baseRegionID
+
+    if (shouldShowSpecialCountyResults)
+    {
+      currentMapZoomRegion = currentMapZoomRegion.slice(0, -2)
+    }
     
     if (currentMapType.getID() == USAPresidentMapType.getID())
     {
@@ -852,6 +861,19 @@ async function leftClickRegion(div)
       }
     }
 
+    setDataMapDateSliderRange(false)
+    if (shouldShowSpecialCountyResults)
+    {
+      const currentYear = currentSliderDate.getFullYear()
+      const specialDateIndex = currentMapSource.getMapDates().findIndex(mapDate =>
+        new Date(mapDate).getFullYear() == currentYear &&
+        currentMapSource.getDateDisplaySuffix(new Date(mapDate)) == " Special"
+      )
+      if (specialDateIndex >= 0)
+      {
+        $("#dataMapDateSlider").val(specialDateIndex + 1)
+      }
+    }
     displayDataMap(null, null, true)
 
     currentRegionID = null

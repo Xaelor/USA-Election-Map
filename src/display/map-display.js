@@ -403,7 +403,11 @@ async function handleSVGZooming(resolve, svgPath, handleNewSVG, fadeForNewSVG, z
       for (let districtPath of $("#mapcontainertmp #outlines")[0].querySelectorAll("*"))
       {
         let splitArray = districtPath.id.split(subregionSeparator)
-        if ((stateToShow != splitArray[0] && splitArray[0] != "use") || splitArray[1] == "button")
+        const isSenateSpecialRaceMarker =
+          currentMapType.getID() == USASenateMapType.getID() &&
+          svgPath[0] == "svg-sources/usa-senate-map.svg" &&
+          splitArray[0] == `${stateToShow}-S`
+        if ((stateToShow != splitArray[0] && splitArray[0] != "use" && !isSenateSpecialRaceMarker) || splitArray[1] == "button")
         {
           districtPath.remove()
         }
@@ -997,6 +1001,7 @@ function updateSliderDateDisplay(dateToDisplay, overrideDateString, sliderDateDi
   else
   {
     dateString = getDateString(dateToDisplay, "/", false, true)
+    dateString += currentMapSource?.getDateDisplaySuffix?.(dateToDisplay) ?? ""
   }
 
   $("#" + sliderDateDisplayDivID).html(dateString)
@@ -1753,6 +1758,7 @@ async function zoomOutMap(displayMap = true)
 {
   currentViewingState = ViewingState.viewing
   currentMapZoomRegion = null
+  setDataMapDateSliderRange(false)
   
   if (showingCompareMap && currentMapType.getID() == USAPresidentMapType.getID())
   {

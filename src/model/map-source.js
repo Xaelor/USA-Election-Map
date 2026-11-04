@@ -381,7 +381,7 @@ class MapSource
 
   getMapDates()
   {
-    return this.mapDates
+    return this.getMapDatesFunction ? this.getMapDatesFunction(this.mapDates) : this.mapDates
   }
 
   getRegionData(modelDate, regionID)
