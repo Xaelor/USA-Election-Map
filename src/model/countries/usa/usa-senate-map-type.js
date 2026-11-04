@@ -2275,9 +2275,9 @@ const USASenateMapType = new MapType(
     }
 
     const countyResultsZoomingFunction = async (mapDateData, regionID, isZoomCheck, date) => {
-      if (!SenateCountyDataSource.getMapData() || !(await CSVDatabase.isSourceUpdated(SenateCountyDataSource.getID())))
+      if (!CountyElectionResultMapSource.getMapData() || !(await CSVDatabase.isSourceUpdated(CountyElectionResultMapSource.getID())))
       {
-        if (!(await SenateCountyDataSource.loadMap()))
+        if (!(await CountyElectionResultMapSource.loadMap()))
         {
           throw new Error("Unable to load Senate county election results")
         }
@@ -2466,9 +2466,9 @@ const USASenateMapType = new MapType(
     PastElectionResultMapSource.getDateDisplaySuffix = date =>
       specialSenateDates.has(date.getTime()) ? " Special" : ""
 
-    const SenateCountyDataSource = new MapSource(
+    const CountyElectionResultMapSource = new MapSource(
       "Past-Senate-Counties", // id
-      "Senate County Data", // name
+      "County Results", // name
       "./csv-sources/past-senate-county.csv", // dataURL
       "https://en.wikipedia.org/wiki/", // homepageURL
       {regular: "./assets/wikipedia-large.png", mini: "./assets/wikipedia-large.png"}, // iconURL
