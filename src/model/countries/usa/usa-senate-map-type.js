@@ -102,12 +102,14 @@ const USASenateMapType = new MapType(
         if (racesToIgnore.includes(raceKey)) continue
 
         let regionID = raceData[columnMap.region]
-        let special = raceData[columnMap.special] == "S2"
+        let special = raceData[columnMap.special] == "S2" || (columnMap.contestType && raceData[columnMap.contestType] == "SP")
 
         let totalVotes = raceData[columnMap.totalVotes]
         let reportingPercent = raceData[columnMap.reportingPercent]
 
-        let regionClass = !special ? onCycleClass : stateClasses[regionID].filter(classNum => classNum != onCycleClass)[0]
+        let regionClass = !special
+          ? onCycleClass
+          : specialElectionClasses[cycleYear][regionID] ?? stateClasses[regionID].filter(classNum => classNum != onCycleClass)[0]
 
         let fullRegionID = regionID + (special ? "-S" : "")
 
@@ -132,8 +134,19 @@ const USASenateMapType = new MapType(
           {
             partyID = IndependentGenericParty.getID()
           }
+          
+          const candidateFullName = columnMap.candidateFullName ? candidateData[columnMap.candidateFullName] : null
+          const sameNameCandidateDataItems = formattedCandidatesArray.filter(c => c.candidate == candidateName)
+          if (candidateFullName && sameNameCandidateDataItems.length > 0)
+          {
+            candidateName = candidateFullName
+            for (const sameNameCandidateData of sameNameCandidateDataItems)
+            {
+              sameNameCandidateData.candidate = sameNameCandidateData.candidateFullName ?? sameNameCandidateData.candidate
+            }
+          }
 
-          formattedCandidatesArray.push({candidate: candidateName, partyID: partyID, voteshare: totalVotes > 0 ? candidateVotes/totalVotes*100 : 0, votes: candidateVotes})
+          formattedCandidatesArray.push({candidate: candidateName, candidateFullName, partyID: partyID, voteshare: totalVotes > 0 ? candidateVotes/totalVotes*100 : 0, votes: candidateVotes})
         }
 
         let voteshareSortedCandidateData = formattedCandidatesArray.sort((cand1, cand2) => cand2.voteshare - cand1.voteshare)
@@ -1387,8 +1400,10 @@ const USASenateMapType = new MapType(
         reportingPercent: "percentReporting",
         candidates: "candidates",
         candidateName: "lastName",
+        candidateFullName: "fullName",
         partyID: "majorParty",
-        candidateVotes: "voteNum"
+        candidateVotes: "voteNum",
+        contestType: "contestType"
       }, // columnMap
       2026, // cycleYear
       null, // candidateNameToPartyIDMap

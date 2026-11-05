@@ -83,6 +83,7 @@ const USAHouseMapType = new MapType(
         let totalVotes = raceData[columnMap.totalVotes]
         let reportingPercent = raceData[columnMap.reportingPercent]
         // let calledRace = raceData[columnMap.calledRace] == "called"
+        const isUncontested = columnMap.uncontested ? raceData[columnMap.uncontested] : false
 
         let formattedCandidatesArray = []
 
@@ -101,8 +102,19 @@ const USAHouseMapType = new MapType(
           {
             partyID = IndependentGenericParty.getID()
           }
-
-          formattedCandidatesArray.push({candidate: candidateName, partyID: partyID, voteshare: totalVotes > 0 ? candidateVotes/totalVotes*100 : 0, votes: candidateVotes})
+          
+          const candidateFullName = columnMap.candidateFullName ? candidateData[columnMap.candidateFullName] : null
+          const sameNameCandidateDataItems = formattedCandidatesArray.filter(c => c.candidate == candidateName)
+          if (candidateFullName && sameNameCandidateDataItems.length > 0)
+          {
+            candidateName = candidateFullName
+            for (const sameNameCandidateData of sameNameCandidateDataItems)
+            {
+              sameNameCandidateData.candidate = sameNameCandidateData.candidateFullName ?? sameNameCandidateData.candidate
+            }
+          }
+          
+          formattedCandidatesArray.push({candidate: candidateName, candidateFullName, partyID: partyID, voteshare: totalVotes > 0 ? candidateVotes/totalVotes*100 : (isUncontested ? 100 : 0), votes: candidateVotes})
         }
 
         let voteshareSortedCandidateData = formattedCandidatesArray.sort((cand1, cand2) => cand2.voteshare - cand1.voteshare)
@@ -1204,8 +1216,10 @@ const USAHouseMapType = new MapType(
         calledRace: "editorialStatus",
         candidates: "candidates",
         candidateName: "lastName",
+        candidateFullName: "fullName",
         partyID: "majorParty",
-        candidateVotes: "voteNum"
+        candidateVotes: "voteNum",
+        uncontested: "uncontested"
       }, // columnMap
       2026, // cycleYear
       null, // candidateNameToPartyIDMap
