@@ -578,7 +578,7 @@ function getNonEVDropdownCandidates(partyIDs)
   const stateMinimumVoteshare = 5.0
   // const isOtherCandidate = (candidate) => candidate.candidate == "Other" && candidate.partyID == IndependentGenericParty.getID()
 
-  let candidatesWithNationalMinimumVoteshare = displayRegionDataArray[nationalPopularVoteID].partyVotesharePercentages?.filter(candidate => candidate.voteshare >= nationalMinimumVoteshare) ?? []
+  let candidatesWithNationalMinimumVoteshare = displayRegionDataArray[nationalPopularVoteID]?.partyVotesharePercentages?.filter(candidate => candidate.voteshare >= nationalMinimumVoteshare) ?? []
   let candidatesWithStateMinimumVoteshare = Object.values(displayRegionDataArray).flatMap(regionData => regionData.partyVotesharePercentages?.filter(candidate => candidate.voteshare >= stateMinimumVoteshare) ?? [])
 
   let candidatesToAdd = [...candidatesWithNationalMinimumVoteshare, ...candidatesWithStateMinimumVoteshare]

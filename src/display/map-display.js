@@ -1212,7 +1212,9 @@ async function displayDataMap(dateIndex, reloadPartyDropdowns, fadeForNewSVG)
 
     regionData.region = currentRegionData.region
     regionData.state = currentRegionData.state
+    regionData.county = currentRegionData.county
     regionData.margin = currentRegionData.margin
+    regionData.totalVotes = currentRegionData.totalVotes
     regionData.partyID = currentRegionData.partyID
     regionData.isHold = currentRegionData.isHold
     regionData.electionDate = currentRegionData.electionDate
@@ -1651,7 +1653,8 @@ async function toggleEditing(stateToSet)
     $("#regionboxcontainer").css('pointer-events', "")
 
     let currentMapIsCustom = currentMapSource.isCustom() && !currentMapSource.isCompare()
-    let currentMapDataForDate = cloneObject(currentSliderDate ? currentMapSource.getMapData()[currentSliderDate.getTime()] : displayRegionDataArray)
+    let isPresidentialCountyView = currentMapType.getID() == USAPresidentMapType.getID() && currentViewingState == ViewingState.zooming && !showingCompareMap
+    let currentMapDataForDate = cloneObject(isPresidentialCountyView ? displayRegionDataArray : (currentSliderDate ? currentMapSource.getMapData()[currentSliderDate.getTime()] : displayRegionDataArray))
     
     if (currentRound)
     {
@@ -1664,10 +1667,19 @@ async function toggleEditing(stateToSet)
       }
     }
     
-    currentCustomMapSource.updateMapData(currentMapDataForDate, getCurrentDateOrToday(), !currentMapIsCustom, currentMapSource.getCandidateNames(getCurrentDateOrToday()), !currentMapIsCustom ? currentEditingMode : null)
-
     if (!currentMapIsCustom)
     {
+      const stateMapData = isPresidentialCountyView && currentSliderDate ? currentMapSource.getMapData()?.[currentSliderDate.getTime()] : null
+      if (stateMapData)
+      {
+        currentCustomMapSource.updateMapData(cloneObject(stateMapData), getCurrentDateOrToday(), true, currentMapSource.getCandidateNames(getCurrentDateOrToday()), currentEditingMode)
+        currentCustomMapSource.updateMapData(currentMapDataForDate, getCurrentDateOrToday(), false, currentMapSource.getCandidateNames(getCurrentDateOrToday()), currentEditingMode)
+      }
+      else
+      {
+        currentCustomMapSource.updateMapData(currentMapDataForDate, getCurrentDateOrToday(), true, currentMapSource.getCandidateNames(getCurrentDateOrToday()), currentEditingMode)
+      }
+
       currentCustomMapSource.resetMapUUID()
       
       currentCustomMapSource.setCandidateNames(currentMapSource.getCandidateNames(getCurrentDateOrToday()), getCurrentDateOrToday())
@@ -1680,6 +1692,7 @@ async function toggleEditing(stateToSet)
     }
     else
     {
+      currentCustomMapSource.updateMapData(currentMapDataForDate, getCurrentDateOrToday(), false, currentMapSource.getCandidateNames(getCurrentDateOrToday()))
       displayPartyTotals(true)
     }
     

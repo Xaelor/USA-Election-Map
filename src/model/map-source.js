@@ -660,7 +660,7 @@ class MapSource
 
     if (this.updateCustomMapFunction)
     {
-      this.updateCustomMapFunction(displayRegionArray, this.mapData[dateToUpdate])
+      this.updateCustomMapFunction(displayRegionArray, this.mapData[dateToUpdate], this.mapData, dateToUpdate, resetMapData)
     }
     else
     {
@@ -707,10 +707,16 @@ class MapSource
       {
         let regionData = mapData[mapDate][regionID]
 
-        let candidatesToAdd = regionData.partyVotesharePercentages && this.editingMode == EditingMode.voteshare ? regionData.partyVotesharePercentages.reduce((candidateMap, partyPercentage) =>
+        const isCountyData = this.getID() == "Custom-Presidential" && regionData.county != null
+        let candidatesToAdd = regionData.partyVotesharePercentages && (this.editingMode == EditingMode.voteshare || isCountyData) ? regionData.partyVotesharePercentages.reduce((candidateMap, partyPercentage) =>
         {
           return {...candidateMap, [getRegionCandidateName(partyPercentage.partyID, regionData, partyPercentage, partyIDToCandidateNames)]: partyPercentage.partyID}
         }, {}) : cloneObject(candidateNameToPartyIDs)
+
+        if (isCountyData)
+        {
+          candidatesToAdd = {...cloneObject(candidateNameToPartyIDs), ...candidatesToAdd}
+        }
 
         if (regionData.partyID && regionData.partyID != TossupParty.getID() && !getKeyByValue(candidatesToAdd, regionData.partyID))
         {
@@ -729,7 +735,7 @@ class MapSource
 
           columnTitles.forEach((columnTitle, columnTitleNum) => {
             let columnKey = getKeyByValue(columnMap, columnTitle)
-            csvText += convertMapDataRowToCSVFunction(columnKey, mapDateString, regionID, regionNameToID, candidateName, candidatesToAdd[candidateName], regionData, this.editingMode == EditingMode.voteshare)
+            csvText += convertMapDataRowToCSVFunction(columnKey, mapDateString, regionID, regionNameToID, candidateName, candidatesToAdd[candidateName], regionData, this.editingMode == EditingMode.voteshare || isCountyData)
 
             if (columnTitleNum < columnTitles.length-1)
             {

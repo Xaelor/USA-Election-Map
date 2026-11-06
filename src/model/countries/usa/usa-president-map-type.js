@@ -1143,6 +1143,7 @@ const USAPresidentMapType = new MapType(
         return partyID || electionYearToCandidateData[currentCycleYear || 2020][candidateName]
 
         case "percentAdjusted":
+        if (regionData.county != null) { return "" }
         voteshareData = shouldUseVoteshare && regionData.partyVotesharePercentages ? regionData.partyVotesharePercentages.find(partyVoteshare => partyID == partyVoteshare.partyID) : null
         if (voteshareData)
         {
@@ -1154,15 +1155,31 @@ const USAPresidentMapType = new MapType(
         }
         return 0
 
-        case "order":
+        case "order": {
+        if (regionData.county != null)
+        {
+          const countyCandidates = regionData.partyVotesharePercentages ?? []
+          const sortedCountyCandidates = countyCandidates.concat().sort((candidate1, candidate2) => candidate2.voteshare-candidate1.voteshare)
+          const countyMargin = (sortedCountyCandidates[0]?.voteshare ?? 0) - (sortedCountyCandidates[1]?.voteshare ?? 0)
+          const countyVoteshareIsCurrent = sortedCountyCandidates[0]?.partyID == regionData.partyID && Math.abs(countyMargin-regionData.margin) < 0.000001
+          if (!countyVoteshareIsCurrent)
+          {
+            return partyID == regionData.partyID ? 0 : 1
+          }
+        }
         voteshareData = regionData.partyVotesharePercentages ? regionData.partyVotesharePercentages.find(partyVoteshare => partyID == partyVoteshare.partyID) : null
         if (voteshareData)
         {
           return voteshareData.order
         }
         return ""
+        }
 
         case "region":
+        if (regionData.county != null)
+        {
+          return regionID.split(subregionSeparator)[0]
+        }
         if (regionNameToID)
         {
           return getKeyByValue(regionNameToID, regionID) ?? regionID
@@ -1172,11 +1189,93 @@ const USAPresidentMapType = new MapType(
           return regionID
         }
 
+        case "candidateVotes": {
+        if (regionData.county == null) { return "" }
+        const countyCandidates = regionData.partyVotesharePercentages ?? []
+        const sortedCountyCandidates = countyCandidates.concat().sort((candidate1, candidate2) => candidate2.voteshare-candidate1.voteshare)
+        const countyMargin = (sortedCountyCandidates[0]?.voteshare ?? 0) - (sortedCountyCandidates[1]?.voteshare ?? 0)
+        const countyVoteshareIsCurrent = sortedCountyCandidates[0]?.partyID == regionData.partyID && Math.abs(countyMargin-regionData.margin) < 0.000001
+        voteshareData = shouldUseVoteshare && countyVoteshareIsCurrent ? countyCandidates.find(partyVoteshare => partyID == partyVoteshare.partyID) : null
+        if (voteshareData)
+        {
+          return voteshareData.voteshare*100
+        }
+        return regionData.partyID == partyID ? regionData.margin*100 : 0
+        }
+
+        case "totalVotes":
+        return regionData.county == null ? "" : 100*100
+
+        case "county":
+        return regionData.county == null ? "" : regionID.split(subregionSeparator)[1]
+
         case "disabled":
         return (regionData.disabled ?? false).toString().toUpperCase()
         
         case "flip":
         return (regionData.flip ?? false).toString().toUpperCase()
+      }
+    }
+
+    const customPresidentialMapFilterFunction = async (rawMapData, mapDates, columnMap, cycleYear, candidateNameToPartyIDMap, regionNameToID, heldRegionMap, shouldFilterOutDuplicateRows, isCustomMap, voteshareCutoffMargin, shouldIncludeVoteshare) =>
+    {
+      const stateMapData = {}
+      const countyMapData = {}
+
+      for (const mapDate of mapDates)
+      {
+        stateMapData[mapDate] = []
+        countyMapData[mapDate] = []
+
+        for (const row of rawMapData[mapDate] ?? [])
+        {
+          if (row[columnMap.county])
+          {
+            countyMapData[mapDate].push({...row, [CustomCountyMapSource.columnMap.region]: row[columnMap.region]})
+          }
+          else
+          {
+            stateMapData[mapDate].push(row)
+          }
+        }
+      }
+
+      CustomCountyMapSource.rawMapData = countyMapData
+      await CustomCountyMapSource.loadMap(false, false, true)
+
+      return await doubleLineVoteshareFilterFunction(stateMapData, mapDates, columnMap, cycleYear, candidateNameToPartyIDMap, regionNameToID, heldRegionMap, shouldFilterOutDuplicateRows, isCustomMap, voteshareCutoffMargin, shouldIncludeVoteshare)
+    }
+
+    const customPresidentialMapUpdateFunction = (displayRegionArray, mapDateData, allMapData, dateToUpdate, resetMapData) =>
+    {
+      if (resetMapData)
+      {
+        CustomCountyMapSource.resetMapData()
+      }
+      else
+      {
+        const countyMapData = CustomCountyMapSource.getMapData() ?? {}
+        for (const mapDate in countyMapData)
+        {
+          allMapData[mapDate] ??= {}
+          for (const stateID in countyMapData[mapDate])
+          {
+            const {mapDateData} = stateCountyVoteshareFilterFunction(stateID, countyMapData[mapDate][stateID], new Date(parseInt(mapDate)), null, CustomCountyMapSource.columnMap, true, null, CustomCountyMapSource.candidateNameToPartyIDMap)
+            for (const regionID in mapDateData)
+            {
+              allMapData[mapDate][regionID] = cloneObject(mapDateData[regionID])
+            }
+          }
+        }
+      }
+
+      for (const regionID in displayRegionArray)
+      {
+        if (regionID.endsWith(subregionSeparator + statePopularVoteDistrictID)) { continue }
+
+        const regionData = cloneObject(displayRegionArray[regionID])
+        regionData.region = regionID
+        mapDateData[regionID] = regionData
       }
     }
     
@@ -1194,15 +1293,19 @@ const USAPresidentMapType = new MapType(
         return partyID || electionYearToCandidateData[currentCycleYear || 2020][candidateName]
     
         case "candidateVotes": {
-          const voteshareData = shouldUseVoteshare && regionData.partyVotesharePercentages ? regionData.partyVotesharePercentages.find(partyVoteshare => partyID == partyVoteshare.partyID) : null
-          if (voteshareData)
+            const countyCandidates = regionData.partyVotesharePercentages ?? []
+            const sortedCountyCandidates = countyCandidates.concat().sort((candidate1, candidate2) => candidate2.voteshare-candidate1.voteshare)
+            const countyMargin = (sortedCountyCandidates[0]?.voteshare ?? 0) - (sortedCountyCandidates[1]?.voteshare ?? 0)
+            const countyVoteshareIsCurrent = sortedCountyCandidates[0]?.partyID == regionData.partyID && Math.abs(countyMargin-regionData.margin) < 0.000001
+            const voteshareData = shouldUseVoteshare && countyVoteshareIsCurrent ? countyCandidates.find(partyVoteshare => partyID == partyVoteshare.partyID) : null
+            if (voteshareData)
           {
-            return voteshareData.voteshare*100
+              return voteshareData.voteshare*100
           }
-          else if (regionData.partyID == partyID)
-          {
-            return regionData.margin
-          }
+            else if (regionData.partyID == partyID)
+            {
+              return regionData.margin*100
+            }
           return 0
         }
         
@@ -2223,6 +2326,9 @@ const USAPresidentMapType = new MapType(
         candidateName: "candidate",
         partyID: "party",
         percentAdjusted: "percent",
+        candidateVotes: "candidatevotes",
+        totalVotes: "totalvotes",
+        county: "county",
         order: "order",
         flip: "flip"
       }, // columnMap
@@ -2234,8 +2340,8 @@ const USAPresidentMapType = new MapType(
       null, // heldRegionMap
       false, // shouldFilterOutDuplicateRows
       true, // addDecimalPadding
-      doubleLineVoteshareFilterFunction, // organizeMapDataFunction
-      null, // viewingDataFunction
+      customPresidentialMapFilterFunction, // organizeMapDataFunction
+      (mapDateData) => Object.fromEntries(Object.entries(mapDateData).filter(([, regionData]) => regionData.county == null)), // viewingDataFunction
       async (mapDateData, regionID, isZoomCheck, date) => {
         const allSourcesCanZoom = 
           showingCompareMap
@@ -2246,7 +2352,7 @@ const USAPresidentMapType = new MapType(
         
         if (isZoomCheck)
         {
-          return allSourcesCanZoom
+          return showingCompareMap ? allSourcesCanZoom : await CustomCountyMapSource.canZoom(mapDateData, regionID)
         }
         else if (showingCompareMap)
         {
@@ -2284,7 +2390,7 @@ const USAPresidentMapType = new MapType(
         return county + ", " + state
       }, // getFormattedRegionName
       null, // customOpenRegionLinkFunction
-      null, // updateCustomMapFunction
+      customPresidentialMapUpdateFunction, // updateCustomMapFunction
       customMapConvertMapDataToCSVFunction, // convertMapDataRowToCSVFunction
       true, // isCustomMap
       false, // shouldClearDisabled
